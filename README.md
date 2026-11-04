@@ -1,6 +1,6 @@
 # Scalpel DJ
 
-Logiciel DJ gratuit pour Mac avec puce Apple. Il retrouve tout seul ta bibliothèque Serato DJ Pro (sons, crates,
+Logiciel DJ gratuit pour Mac avec puce Apple, en français ou en anglais. Il retrouve tout seul ta bibliothèque Serato DJ Pro (sons, crates,
 cues, boucles, grilles, pads du sampler), sans la copier ni la modifier, et il marche sans Internet.
 
 ## Télécharger
@@ -42,6 +42,7 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 DJ Pro library by itself (tracks, crates, cues, loops, grids, sampler pads), without copying or changing it, and it
 works offline. [Download the latest version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip).
 To open it the first time: open it once, then System Settings → Privacy & Security → "Open Anyway".
+The app speaks English too: Settings → Display → Language (a new install follows your Mac's language).
 
 Scalpel DJ est fait par Dj ListenDat. Serato, Pioneer DJ et AlphaTheta sont des marques de leurs propriétaires.
 Scalpel DJ n'est lié à aucune de ces sociétés.
