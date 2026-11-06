@@ -9,6 +9,19 @@ cues, boucles, grilles, pads du sampler), sans la copier ni la modifier, et il m
 
 Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](https://github.com/Djlistendat/scalpel-dj/releases).
 
+## Moins de processeur que Serato DJ Pro
+
+L'écran Mix (formes d'onde, plateaux, vu-mètres, chronos) est dessiné en entier par la carte graphique, en une seule
+image. Mesuré sur un MacBook Air M1 (8 Go), plein écran, Pioneer DDJ-REV5 branchée, deux platines en lecture :
+
+| | Scalpel DJ 1.03 | Serato DJ Pro 4 |
+|---|---|---|
+| Processeur de l'app | 50 % | 46 % |
+| Affichage de macOS (WindowServer) | 22 % | 35 % |
+| **Total** | **72 %** | **81 %** |
+
+Le détail est dans les [notes de la 1.03](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.03).
+
 ## Ce qu'il faut
 
 - Un Mac avec une puce Apple (M1 ou plus récent). Testé sur macOS 14 (Sonoma).
@@ -41,7 +54,8 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 **In English.** Scalpel DJ is a free DJ app for Apple Silicon Macs (M1 or later). On first launch it finds your Serato
 DJ Pro library by itself (tracks, crates, cues, loops, grids, sampler pads), without copying or changing it, and it
 works offline. [Download the latest version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip).
-To open it the first time: open it once, then System Settings → Privacy & Security → "Open Anyway".
+With two decks playing on an M1 MacBook Air, it uses less CPU in total than Serato DJ Pro (72 % vs 81 %,
+app + macOS display). To open it the first time: open it once, then System Settings → Privacy & Security → "Open Anyway".
 The app speaks English too: Settings → Display → Language (a new install follows your Mac's language).
 
 Scalpel DJ est fait par Dj ListenDat. Serato, Pioneer DJ et AlphaTheta sont des marques de leurs propriétaires.
