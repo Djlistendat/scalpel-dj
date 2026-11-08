@@ -58,5 +58,16 @@ With two decks playing on an M1 MacBook Air, it uses less CPU in total than Sera
 app + macOS display). To open it the first time: open it once, then System Settings → Privacy & Security → "Open Anyway".
 The app speaks English too: Settings → Display → Language (a new install follows your Mac's language).
 
+## Droits
+
+**© 2026 Dj ListenDat. Tous droits réservés.** Scalpel DJ est gratuit à utiliser. Ce dépôt ne contient pas son code
+source, et l'app n'est pas un logiciel libre : il est interdit de la copier, la décompiler, la désassembler, la
+modifier, d'en reprendre le code, de la redistribuer ou de la revendre, en tout ou en partie, sans l'accord écrit de
+Dj ListenDat. Pour la partager, envoie le lien de cette page.
+
+**© 2026 Dj ListenDat. All rights reserved.** Scalpel DJ is free to use. This repository does not contain its source
+code, and the app is not open source: you may not copy, decompile, disassemble, modify, reuse its code, redistribute or
+resell it, in whole or in part, without Dj ListenDat's written permission. To share it, send the link to this page.
+
 Scalpel DJ est fait par Dj ListenDat. Serato, Pioneer DJ et AlphaTheta sont des marques de leurs propriétaires.
 Scalpel DJ n'est lié à aucune de ces sociétés.
