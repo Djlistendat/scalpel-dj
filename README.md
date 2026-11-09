@@ -7,7 +7,18 @@ cues, boucles, grilles, pads du sampler), sans la copier ni la modifier, et il m
 
 **[⬇ Scalpel DJ pour Mac (1,2 Go)](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)**
 
-Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](https://github.com/Djlistendat/scalpel-dj/releases).
+Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](https://github.com/Djlistendat/scalpel-dj/releases), et ce que chacune apporte dans l'[historique](HISTORIQUE.md).
+
+## Historique des versions
+
+**21 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+
+- **[1.11](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.11)** (9 novembre 2026) : Mélodie, un éditeur façon Melodyne · Le son du stem, rejoué note par note · Façon Nora · Intro Lab complet sur le Mac · Anti-larsen refait (à tester) · Key lock juste
+- **[1.09](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.09)** (9 novembre 2026) : Son Scalpel, une clarté propre · Le choix Coupé / Moyen / Fort agit dès le clic
+- **[1.08](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.08)** (8 novembre 2026) : Intro Lab, un écran plus simple · Intro Lab garde ton agencement · Pré-écoute de l'edit avec sa forme d'onde
+- **[1.07](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.07)** (8 novembre 2026) : Plus de craquements au scratch avec le Son Scalpel · Intro Lab : plus de mot coupé aux raccords · Intro Lab : la voix d'un autre passage
+
+**[Tout l'historique, version par version →](HISTORIQUE.md)** (*English: [full version history](HISTORIQUE.md), English notes under each version.*)
 
 ## Moins de processeur que Serato DJ Pro
 
