@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scalpel DJ – logiciel DJ gratuit pour Mac</title>
+<meta name="description" content="Depuis 2006, les DJ demandent des choses à Serato. Toujours pas. Tout ça, c'est dans Scalpel DJ, logiciel DJ gratuit pour Mac : pré-écoute, crates ET/OU, versions reliées, EQ master, effets sur le micro, télécommande, Intro Lab, Mélodie.">
+<meta property="og:title" content="Scalpel DJ – logiciel DJ gratuit pour Mac">
+<meta property="og:description" content="Depuis 2006, les DJ demandent des choses à Serato. Toujours pas. Tout ça, c'est dans Scalpel DJ. Gratuit.">
+<meta property="og:url" content="https://djlistendat.github.io/scalpel-dj/">
+<style>
+  :root { --bg: #0b0d10; --card: #15181d; --line: #262b33; --text: #eef1f5; --soft: #9aa3ae; --accent: #ff4d3d; --ok: #3ddc84; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 920px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.02em; }
+  h1 span { color: var(--accent); }
+  .lead { font-size: 19px; color: var(--soft); max-width: 680px; margin: 0 0 28px; }
+  .lead b { color: var(--text); }
+  .btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; padding: 15px 26px; border-radius: 12px; }
+  .btn:hover { filter: brightness(1.1); }
+  .small { color: var(--soft); font-size: 14px; margin-top: 10px; }
+  h2 { font-size: 26px; margin: 56px 0 16px; }
+  .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; }
+  table { width: 100%; border-collapse: collapse; min-width: 560px; }
+  th, td { text-align: left; padding: 13px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  th { background: var(--card); font-size: 14px; color: var(--soft); font-weight: 600; }
+  td:first-child { width: 30%; } .y { font: 700 22px/1 'Arial Narrow', Arial, sans-serif; color: #ff5f57; } .ok { color: #5fd38a; }
+  td b { color: var(--text); }
+  .yes { color: var(--ok); font-weight: 700; }
+  .no { color: var(--soft); }
+  ol { padding-left: 22px; } li { margin: 6px 0; }
+  .note { color: var(--soft); font-size: 14px; }
+  .en { margin-top: 64px; padding-top: 8px; border-top: 1px solid var(--line); }
+  footer { margin-top: 56px; color: var(--soft); font-size: 13px; }
+  a { color: #ff8a7d; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Depuis 2006, les DJ demandent des choses à Serato.<br><span>Toujours pas.</span></h1>
+  <p class="lead"><b>Tout ça, c'est dans Scalpel DJ. Gratuit.</b> Logiciel DJ pour Mac avec puce Apple (M1 ou plus récent), en français ou en anglais. Ta bibliothèque Serato DJ Pro se charge toute seule (sons, crates, cues, boucles, grilles, historique, pads du sampler), sans la copier ni la modifier, et tout marche sans Internet.</p>
+  <a class="btn" href="https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip">⬇ Télécharger pour Mac (1,2 Go)</a>
+  <p class="small">Gratuit · toujours la dernière version · <a href="https://github.com/Djlistendat/scalpel-dj">la page GitHub</a> · <a href="https://github.com/Djlistendat/scalpel-dj/blob/main/HISTORIQUE.md">l'historique</a></p>
+
+  <h2>Ce que les DJ demandent à Serato depuis 2006</h2>
+  <p class="note">Chaque demande a été relue sur le forum de Serato, et cherchée dans toutes ses notes de version jusqu'à Serato DJ Pro 5.0.0 (19 octobre 2026) : aucune n'y est.</p>
+  <div class="table"><table>
+    <tr><th>Ce que les DJ demandent</th><th>Sur le forum de Serato</th><th>Dans Scalpel DJ</th></tr>
+    <tr><td><span class="y">2013</span><br><b>Pré-écouter un son sans le charger sur une platine</b></td><td class="no"><a href="https://serato.com/forum/discussion/948001">« Prelisten feature »</a> : ≈ 170 messages, aucune réponse de Serato ; <a href="https://serato.com/forum/discussion/1606243">encore en 2017</a> : ≈ 114 messages</td><td class="ok">Pré-écoute depuis la bibliothèque, au casque ou sur le son du Mac</td></tr>
+    <tr><td><span class="y">2014</span><br><b>Ne voir que les sons qui se mixent avec celui qui passe</b></td><td class="no"><a href="https://serato.com/forum/discussion/1297921">« Filter Library by BPM Range »</a> : 18 réponses</td><td class="ok">Le filtre « Compatibles » suit la platine : tempo et tons voisins</td></tr>
+    <tr><td><span class="y">2012</span><br><b>Des crates intelligentes avec des « et » et des « ou »</b></td><td class="no"><a href="https://serato.com/forum/discussion/1278585">« Smart Sub Crates »</a> : ≈ 97 réponses ; Serato en 2016 : « Nested Smart Crates », prévu</td><td class="ok">Des « et », des « ou », des groupes dans les groupes</td></tr>
+    <tr><td><span class="y">2006</span><br><b>Relier l'acapella, l'instru et l'original</b></td><td class="no"><a href="https://serato.com/forum/discussion/13911">« sync accapella instrumental and original »</a> : 35 réponses</td><td class="ok">Tes versions reliées ; tu bascules en pleine lecture, en phase</td></tr>
+    <tr><td><span class="y">2006</span><br><b>Un logiciel qui se souvient de ce qui va ensemble</b></td><td class="no"><a href="https://serato.com/forum/discussion/14777">« A "next track suggestion" system »</a> : 16 réponses</td><td class="ok">Il retient tes enchaînements : « Ça se mixe bien avec… »</td></tr>
+    <tr><td><span class="y">2018</span><br><b>Marquer « joué » toutes les versions d'un son</b></td><td class="no"><a href="https://serato.com/forum/discussion/1662365">« Ability to mark tracks as played »</a></td><td class="ok">« Déjà joué ce soir », toutes versions</td></tr>
+    <tr><td><span class="y">2013</span><br><b>Un égaliseur sur le master</b></td><td class="no"><a href="https://serato.com/forum/discussion/1180293">Réponse de Serato</a> : « there is no master EQ available in Serato DJ »</td><td class="ok">Onze bandes sur le master, et sur ton casque</td></tr>
+    <tr><td><span class="y">2013</span><br><b>Des effets sur le micro</b></td><td class="no"><a href="https://serato.com/forum/discussion/1178065">Réponse de Serato</a> : « currently it&#39;s not available »</td><td class="ok">Autotune dans la tonalité du morceau, écho et réverb calés sur le tempo, anti-larsen (à tester)</td></tr>
+    <tr><td><span class="y">2013</span><br><b>Une télécommande</b></td><td class="no">Il y en avait une : Serato Remote, pour iPad. Abandonnée (« discontinued »)</td><td class="ok">Ta télécommande, c'est ton téléphone : un QR code, rien à installer</td></tr>
+    <tr><td><span class="y">2014</span><br><b>Un dossier qui range les nouveaux sons dans les crates</b></td><td class="no"><a href="https://serato.com/forum/discussion/1376185">« Library import folder structure into crates »</a> ; l&#39;Auto Import <a href="https://serato.com/forum/discussion/2068962">ne marche plus en 4.0</a></td><td class="ok">Tes téléchargements : un glisser sur la crate, et ils sont rangés</td></tr>
+    <tr><td><span class="y">2025</span><br><b>Les stems sur les potards d'EQ</b></td><td class="no"><a href="https://serato.com/forum/discussion/2061729">Demande du 23 octobre 2025</a></td><td class="ok">Stems EQ sur les potards, avec « basse + kick » sur le même potard</td></tr>
+  </table></div>
+
+  <h2>Et là, on n'a même pas commencé.</h2>
+  <ul>
+    <li><b>Intro Lab</b> : fabrique une version intro de DJ (8 mesures de beat, les stems qui entrent un à un), exportée à côté de l'original avec cues et grille.</li>
+    <li><b>Mélodie</b> : la voix, la mélodie ou la basse d'un son en notes, à corriger façon Melodyne, rejouées avec le son du stem.</li>
+    <li><b>Voix studio</b> : en plus des stems, une voix séparée encore plus propre sur le rap, calculée au chargement.</li>
+    <li><b>Sorties propres</b> : écho, filtre, roll, backspin, tirées au hasard, calées sur la mesure.</li>
+    <li><b>Transition de tempo</b> en un bouton, calée sur la phase ; la grille passe au vert quand c'est calé.</li>
+    <li><b>Tes doublons</b> : il garde le vrai 320 (il écoute jusqu'où monte l'aigu, pas la taille du fichier).</li>
+    <li><b>Pas de caisson ?</b> Il fait les basses quand même.</li>
+    <li><b>Son Scalpel</b> : clarté et punch sur le master.</li>
+    <li><b>Tes dates, ton flyer, ta préparation</b> : l'agenda de tes bookings.</li>
+    <li><b>Ton mix enregistré</b>, ta tracklist déjà prête.</li>
+    <li><b>La télécommande devient un studio</b> : bibliothèque, Intro Lab, Mélodie et micro depuis ton téléphone.</li>
+  </ul>
+
+  <h2>Ce que Serato te fait payer, gratuit ici</h2>
+  <div class="table"><table>
+    <tr><th></th><th>Scalpel DJ</th><th>Serato DJ Pro</th></tr>
+    <tr><td>Prix</td><td class="yes">Gratuit</td><td>299 $ ou 11,99 $ par mois (ou offert avec une table qui le débloque)</td></tr>
+    <tr><td>Key lock de haute qualité</td><td class="yes">Inclus</td><td>Pitch 'n Time : extension payante (DJ Suite, 499 $ ou 14,99 $ par mois)</td></tr>
+    <tr><td>DVS (vinyles et CDJ en timecode)</td><td class="yes">Inclus (à tester)</td><td>Extension payante (DJ Suite), offerte avec certaines tables</td></tr>
+    <tr><td>Processeur, deux platines, MacBook Air M1 (app + affichage de macOS)</td><td class="yes">72 %</td><td>81 %</td></tr>
+  </table></div>
+  <p class="note">Prix relevés sur serato.com le 10 novembre 2026. Processeur mesuré sur un MacBook Air M1 (8 Go), plein écran, Pioneer DJ DDJ-REV5 branchée, deux platines en lecture.</p>
+
+  <h2>Matériel</h2>
+  <p>Mac avec puce Apple (M1 ou plus récent). Essayées en vrai : Pioneer DJ DDJ-REV5 et DJM-S9. Prêts, à confirmer : contrôleurs, tables, CDJ, XDJ, Phase. Sans table, tout joue sur le son du Mac. Ton téléphone sert de télécommande, par le Wi-Fi.</p>
+
+  <h2>Installer</h2>
+  <ol>
+    <li>Ouvre le zip, puis glisse « Scalpel DJ » dans le dossier Applications.</li>
+    <li>Ouvre Scalpel DJ. macOS dit qu'il ne peut pas vérifier l'app, parce qu'elle n'est pas passée par Apple : clique sur « Terminé ».</li>
+    <li>Va dans Réglages Système → Confidentialité et sécurité. Plus bas, macOS dit que Scalpel DJ a été bloqué : clique sur « Ouvrir quand même », puis confirme.</li>
+    <li>Au premier lancement, l'app demande l'accès à tes dossiers de musique, et au micro seulement si tu allumes l'autotune.</li>
+  </ol>
+  <p class="note">Scalpel DJ n'écrit jamais dans les fichiers de Serato ni dans tes sons. Un bug, une table qui ne marche pas ? Dis-le à Dj ListenDat sur Instagram.</p>
+  <a class="btn" href="https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip">⬇ Télécharger Scalpel DJ</a>
+
+  <section class="en" lang="en">
+    <h2>In English</h2>
+    <p><b>Since 2006, DJs have been asking Serato for things. Still nothing. It's all in Scalpel DJ. Free.</b> A DJ app for Apple Silicon Macs (M1 or later). Your Serato DJ Pro library loads by itself, without copying or changing it, and everything works offline.</p>
+    <ul>
+      <li><b>Prelisten</b> a track without loading it (asked since 2013, ≈ 170 posts, no answer from Serato).</li>
+      <li><b>Show only what mixes</b> with the playing track: BPM range and compatible keys (2014).</li>
+      <li><b>Smart crates with AND and OR</b>, groups inside groups (2012).</li>
+      <li><b>Linked versions</b> (acapella, instrumental, original), switched mid-play in phase (2006).</li>
+      <li><b>Remembers what goes together</b> and suggests the next track (2006).</li>
+      <li><b>Master EQ</b>, 11 bands (Serato in 2013: "there is no master EQ").</li>
+      <li><b>Mic effects</b>: autotune in the track's key, tempo-synced echo and reverb (Serato: "not available").</li>
+      <li><b>Your phone is the remote</b> (Serato Remote was discontinued).</li>
+      <li>And more: Intro Lab, Melody, studio vocal stems, clean random exits, duplicates, gig calendar, recording with tracklist. High-quality key lock and DVS included.</li>
+    </ul>
+    <a class="btn" href="https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip">⬇ Download for Mac (1.2 GB)</a>
+  </section>
+
+  <footer>
+    © 2026 Dj ListenDat. Tous droits réservés. Scalpel DJ est gratuit à utiliser ; il est interdit de le copier, le décompiler, le modifier, le redistribuer ou le revendre sans l'accord écrit de Dj ListenDat.<br>
+    Serato, Pioneer DJ et AlphaTheta sont des marques de leurs propriétaires. Scalpel DJ n'est lié à aucune de ces sociétés.
+  </footer>
+</main>
+</body>
+</html>
