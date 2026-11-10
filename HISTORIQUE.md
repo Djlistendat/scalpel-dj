@@ -1,13 +1,62 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **21 versions publiées** en 6 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **22 versions publiées** en 7 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.12 — 10 novembre 2026
+
+- **Anti-larsen, coupé avant qu'il s'entende (à tester)** : quand la boucle monte (micro approché d'un retour, retours
+  montés), Scalpel le voit sur la musique en moins d'une seconde, même pendant que tu parles, et baisse la voix dans
+  cette bande seulement. Mesuré au banc (6 salles simulées, 18 cas ; jamais essayé en vraie salle) : larsen audible
+  0,05 s en médiane au lieu de 0,45 s, 0,5 s au pire au lieu de 1,0 s ; avec la voix robot 0,4 s au pire au lieu de
+  2,4 s. Aucun cas moins bon que la 1.11.
+- **Anti-larsen, ta voix et la musique ne sont plus prises pour un larsen (à tester)** : 2 fausses alertes en 10 minutes
+  au lieu de 18 (parole, chant, morceaux joués dans le micro).
+- **Anti-larsen, la musique retirée du micro, ta voix intacte (à tester)** : 20 dB de musique des retours retirés
+  pendant que tu parles, 26 à 31 dB dans les pauses ; ta voix change de 0,4 dB au plus.
+- **« Mesurer sur la musique » (à tester)** : dans « Régler… » (Mac et Studio du téléphone), laisse jouer un son 20 à
+  30 s : Scalpel dit à combien de dB tu es du larsen et pose les filtres utiles, sans rien faire siffler.
+- **Moins de processeur** : micro ouvert voix éteinte, l'annulation coûte 1,3 % au lieu de 6,6 % ; le son de deux
+  platines passe de 14 % à 6-7 % d'un cœur.
+- **Son Scalpel, le punch** (Moyen et Fort) : chaque coup de grosse caisse et de caisse claire frappe plus fort
+  (+1,7 dB en Moyen, +3,1 dB en Fort), au même volume perçu.
+- **Grilles du bouyon** : quand la grosse caisse frappe au double du tempo, la grille se pose sur la caisse claire,
+  comme dans Serato 5 (14 grilles justes sur 16 au lieu de 7).
+- **Chercher dans toute la bibliothèque, comme dans Serato** : ⌘ F cherche partout, Échap ramène à la crate, bouton
+  « Tout » ; les sons d'un disque débranché sont trouvés aussi.
+- **Boucles enregistrées, comme dans Serato** : l'onglet LOOPS montre les 8 boucles du son, celles de Serato comprises.
+- **Mélodie** : une note allongée garde une attaque nette ; les curseurs d'une note répondent au clic.
+
+<details><summary>In English (November 10, 2026)</summary>
+
+- **Anti-feedback, cut before you hear it (to be tested)**: when the loop rises (mic brought near a monitor, monitors
+  turned up), Scalpel sees it on the music in under a second, even while you talk, and lowers the voice in that band
+  only. On the bench (6 simulated rooms, 18 cases; never tried in a real room): audible feedback 0.05 s median instead
+  of 0.45 s, 0.5 s at worst instead of 1.0 s; with the robot voice 0.4 s at worst instead of 2.4 s. No case worse than 1.11.
+- **Anti-feedback, your voice and the music are no longer taken for feedback (to be tested)**: 2 false alarms in
+  10 minutes instead of 18.
+- **Anti-feedback, music removed from the mic, your voice untouched (to be tested)**: 20 dB of monitor music removed
+  while you talk, 26 to 31 dB in pauses; your voice changes by 0.4 dB at most.
+- **"Measure on the music" (to be tested)**: in "Set up…" (Mac and phone Studio), let a track play for 20 to 30 s:
+  Scalpel tells you how far you are from feedback and sets the useful filters, without any howl.
+- **Less processor**: mic open with the voice off, cancellation costs 1.3 % instead of 6.6 %; two decks' audio goes from
+  14 % to 6-7 % of a core.
+- **Scalpel Sound punch** (Medium and Strong): every kick and snare hits harder (+1.7 dB Medium, +3.1 dB Strong), at
+  the same perceived loudness.
+- **Bouyon beat grids**: when the kick hits at twice the tempo, the grid lands on the snare, like Serato 5 (14 right
+  grids out of 16 instead of 7).
+- **Search the whole library, like Serato**: ⌘ F searches everywhere, Esc goes back to the crate, "All" button; tracks on
+  an unplugged drive are found too.
+- **Saved loops, like Serato**: the LOOPS tab shows the track's 8 loops, Serato's included.
+- **Melody**: a lengthened note keeps a sharp attack; a note's sliders respond to a click.
+
+</details>
 
 ## 1.11 — 9 novembre 2026
 
