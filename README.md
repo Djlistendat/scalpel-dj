@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**22 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**23 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.13](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.13)** (10 novembre 2026) : Le sampler part du cue, comme dans Serato · Numark NS7II et NS7III (à tester) · Relevé guidé pour les tables inconnues (à tester)
 - **[1.12](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.12)** (10 novembre 2026) : Anti-larsen coupé avant qu'il s'entende (à tester) · La musique retirée du micro, ta voix intacte · « Mesurer sur la musique » · Punch du Son Scalpel · Grilles du bouyon · Recherche partout et boucles enregistrées, comme dans Serato
 - **[1.11](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.11)** (9 novembre 2026) : Mélodie, un éditeur façon Melodyne · Le son du stem, rejoué note par note · Façon Nora · Intro Lab complet sur le Mac · Anti-larsen refait (à tester) · Key lock juste
 - **[1.09](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.09)** (9 novembre 2026) : Son Scalpel, une clarté propre · Le choix Coupé / Moyen / Fort agit dès le clic
-- **[1.08](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.08)** (8 novembre 2026) : Intro Lab, un écran plus simple · Intro Lab garde ton agencement · Pré-écoute de l'edit avec sa forme d'onde
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
