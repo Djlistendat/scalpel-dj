@@ -1,13 +1,41 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **22 versions publiées** en 7 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **23 versions publiées** en 7 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.13 — 10 novembre 2026
+
+- **Sampler : le son part de son cue, comme dans Serato** : un son posé sur le sampler part de son premier cue (sinon du
+  début), comme « Play From » dans Serato. Clic droit sur un emplacement, « Départ » : le début, un de ses cues ou une de
+  ses boucles. Les réglages « Play From » de Serato sont repris avec tes samples.
+- **Numark NS7II et NS7III (à tester)** : platines, pads, table et navigation reconnus ; les plateaux motorisés suivent
+  la musique quand la platine joue, une main qui tient ou pousse le plateau fait un scratch. Numark ne publie pas leurs
+  messages MIDI : la définition suit des relevés publiés par des utilisateurs, jamais essayée ici sur une vraie table.
+- **Relevé guidé pour les tables inconnues (à tester)** : Réglages → Contrôleur → « Commencer le relevé… ». Pour une table
+  que Scalpel ne connaît pas (Rane Performer, Rane One, Twelve…), Scalpel te demande de toucher chaque commande, une par
+  une, et note ce qu'elle envoie. Rien ne joue pendant le relevé. La table marche tout de suite, et le fichier enregistré
+  s'envoie à Dj ListenDat pour qu'elle soit reconnue par tous. Essayé avec une fausse table, jamais avec une vraie.
+
+<details><summary>In English (November 10, 2026)</summary>
+
+- **Sampler: the sample starts from its cue, like in Serato**: a sample starts from its first cue (or from the start),
+  like Serato's "Play From". Right-click a slot, "Start": the beginning, one of its cues or one of its loops. Serato's
+  "Play From" settings come with your samples.
+- **Numark NS7II and NS7III (to be tested)**: decks, pads, mixer and browsing recognized; the motorized platters follow
+  the music while the deck plays, a hand holding or pushing the platter scratches. Numark does not publish their MIDI
+  messages: the definition follows maps published by users, never tried here on a real controller.
+- **Guided capture for unknown controllers (to be tested)**: Settings → Controller → "Start the capture…". For a
+  controller Scalpel doesn't know (Rane Performer, Rane One, Twelve…), Scalpel asks you to touch each control, one by
+  one, and notes what it sends. Nothing plays during the capture. The controller works right away, and the saved file
+  goes to Dj ListenDat so it is recognized for everyone. Tried with a simulated controller, never with a real one.
+
+</details>
 
 ## 1.12 — 10 novembre 2026
 
