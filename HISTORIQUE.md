@@ -1,13 +1,40 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **23 versions publiées** en 7 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **24 versions publiées** en 7 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.14 — 10 novembre 2026
+
+- **Un curseur de pitch sur chaque platine, à la souris** : quand les platines sont repliées (Mac de 13 pouces,
+  bibliothèque agrandie), un curseur de pitch apparaît au bord de chaque platine ; avant, il n'y en avait aucun en
+  Vertical, Horizontal et Classique à 1280 × 800. Molette ou trackpad dessus pour le réglage fin (Maj : plus vite),
+  double-clic : 0 %.
+- **Plus de textes qui se chevauchent** : les tuiles du sampler tiennent sur deux lignes ; le titre du son passe avant
+  les gros chiffres sur une platine étroite ; les deux temps du plateau ne se touchent plus.
+- **Disposition Classique, table cachée** : les deux platines se partagent la largeur (la platine 2 était écrasée).
+- **Finitions** : plus de « null » dans le résumé d'une soirée (Journal), plus de coins blancs aux barres de
+  défilement, plus de barre de couleur à gauche des titres de la bibliothèque ; recherche, colonnes et champs du
+  Journal ne sont plus coupés ; « Nouvelle date » n'apparaît plus trois fois dans un agenda vide.
+
+<details><summary>In English (November 10, 2026)</summary>
+
+- **A pitch slider on each deck, with the mouse**: when the decks are folded (13-inch Mac, enlarged library), a pitch
+  slider appears on the edge of each deck; before, there was none in Vertical, Horizontal and Classic at 1280 × 800.
+  Mouse wheel or trackpad over it for fine tuning (Shift: faster), double-click: 0 %.
+- **No more overlapping text**: sampler tiles fit on two lines; the track title comes before the big numbers on a
+  narrow deck; the platter's two times no longer touch.
+- **Classic layout, mixer hidden**: the two decks share the width (deck 2 was squeezed).
+- **Finishing touches**: no more "null" in a night's summary (Journal), no more white scrollbar corners, no more colour
+  bar on the left of library headings; search, columns and Journal fields are no longer cut off; "New date" no longer
+  appears three times in an empty agenda.
+
+</details>
 
 ## 1.13 — 10 novembre 2026
 
