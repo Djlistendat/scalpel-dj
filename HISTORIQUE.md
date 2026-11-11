@@ -1,13 +1,33 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **25 versions publiées** en 7 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **26 versions publiées** en 8 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.16 — 11 novembre 2026
+
+- **La Pioneer DJ XDJ-RX3 (à tester)**, demandée par **Dj Adrian Reid** sur Instagram : merci ! Elle est reconnue
+  d'après la liste officielle de ses messages MIDI (AlphaTheta) : les deux platines (lecture, CUE, boucles, hot cues,
+  SEARCH, sync, MASTER TEMPO, REVERSE, jog), la table (faders, TRIM, EQ, COLOR, crossfader, casque), les pads en couleur
+  (HOT CUE, SLIP LOOP, et SAVED LOOP, SAMPLER, STEMS dans les modes EXTENSION), les effets, l'écran des jogs et les
+  VU-mètres. Scalpel met la table en MIXER MODE « MIDI CONTROL » et mixe lui-même. Jamais essayée sur une vraie table :
+  le tour du jog se mesure une fois dans Réglages ; BEAT LOOP, BEAT JUMP et le sélecteur d'effet ne font rien encore.
+
+<details><summary>In English (November 11, 2026)</summary>
+
+- **The Pioneer DJ XDJ-RX3 (to be tested)**, requested by **Dj Adrian Reid** on Instagram: thank you! It is recognized
+  from AlphaTheta's official list of its MIDI messages: both decks (play, CUE, loops, hot cues, SEARCH, sync, MASTER
+  TEMPO, REVERSE, jog), the mixer (faders, TRIM, EQ, COLOR, crossfader, headphones), the color pads (HOT CUE, SLIP LOOP,
+  plus SAVED LOOP, SAMPLER and STEMS in the EXTENSION modes), the effects, the jog displays and the level meters. Scalpel
+  sets the mixer to MIXER MODE “MIDI CONTROL” and does the mixing itself. Never tried on a real unit yet: measure the jog
+  turn once in Settings; BEAT LOOP, BEAT JUMP and the effect selector do nothing yet.
+
+</details>
 
 ## 1.15 — 10 novembre 2026
 
