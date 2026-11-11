@@ -1,7 +1,7 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **25 versions publiées** en 8 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **25 versions publiées** en 7 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
