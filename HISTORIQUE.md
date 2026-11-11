@@ -1,13 +1,34 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **24 versions publiées** en 7 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **25 versions publiées** en 8 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.15 — 10 novembre 2026
+
+- **Tous les raccourcis clavier de Serato DJ Pro 5, aux mêmes touches** : E / R et D / F font glisser le tempo tant qu'on
+  les tient, comme dans Serato (doucement d'abord, puis plus vite) ; ⌘ ⇧ → / ← doublent dans le même sens que Serato ;
+  ⌘ ⇧ R montre le morceau dans ses crates ; ⌘ ⇧ ⌫ le met à la corbeille du Mac (après confirmation) ; Échap quitte la
+  recherche, puis l'app (après confirmation). Les touches propres à Scalpel passent avec Maj : ⇧ E sortie, ⇧ R glissement,
+  ⇧ D caler, ⇧ F plein écran. Flip (\) n'est pas encore dans Scalpel.
+- **Le pitch dessiné comme celui de Serato** : un rail fin, des graduations, un capuchon noir barré de blanc.
+- **Plus de place sur l'écran Mix** : bords et écarts réduits à 4 px, moins de vide autour des platines.
+
+<details><summary>In English (November 10, 2026)</summary>
+
+- **All the Serato DJ Pro 5 keyboard shortcuts, on the same keys**: E / R and D / F slide the tempo while held, like
+  Serato (slowly at first, then faster); ⌘ ⇧ → / ← double in the same direction as Serato; ⌘ ⇧ R shows the track in its
+  crates; ⌘ ⇧ ⌫ moves it to the Mac's Trash (after confirming); Esc exits the search, then the app (after confirming).
+  Scalpel's own keys now use Shift: ⇧ E exit, ⇧ R glide, ⇧ D snap, ⇧ F full screen. Flip (\) isn't in Scalpel yet.
+- **The pitch drawn like Serato's**: a thin rail, tick marks, a black cap with a white line.
+- **More room on the Mix screen**: edges and gaps down to 4 px, less empty space around the decks.
+
+</details>
 
 ## 1.14 — 10 novembre 2026
 
