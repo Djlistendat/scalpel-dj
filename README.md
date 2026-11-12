@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**26 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**27 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.17](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.17)** (12 novembre 2026) : XDJ-RX3 : le son sort du master (à tester) · Grille flexible calculée par Scalpel · Clic droit comme dans Serato 5 · Réglages de Serato 5 vérifiés dans Serato · 66 effets, dont 15 calés sur Serato par la mesure
 - **[1.16](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.16)** (11 novembre 2026) : Pioneer DJ XDJ-RX3 (à tester), demandée par Dj Adrian Reid
 - **[1.15](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.15)** (10 novembre 2026) : Tous les raccourcis clavier de Serato DJ Pro 5 · Le pitch dessiné comme celui de Serato · Plus de place sur l'écran Mix
 - **[1.14](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.14)** (10 novembre 2026) : Un curseur de pitch sur chaque platine, à la souris · Plus de textes qui se chevauchent · Classique, table cachée · Finitions
-- **[1.13](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.13)** (10 novembre 2026) : Le sampler part du cue, comme dans Serato · Numark NS7II et NS7III (à tester) · Relevé guidé pour les tables inconnues (à tester)
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
