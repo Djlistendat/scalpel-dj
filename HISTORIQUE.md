@@ -1,13 +1,138 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **26 versions publiées** en 8 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **27 versions publiées** en 9 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.17 — 12 novembre 2026
+
+- **XDJ-RX3 : le son sort du master (à tester)** : Signalé par Dj Adrian Reid : avec la 1.16, toutes les commandes de
+  la XDJ-RX3 répondaient mais rien ne sortait du master. La carte son de la RX3 ne tourne qu’à 44,1 kHz ; Scalpel, qui
+  travaille à 48 kHz, la refusait et envoyait le son sur la sortie du Mac. Scalpel ouvre maintenant une telle carte à sa
+  fréquence et y convertit son moteur (niveau exact, 0,7 ms de plus). Vaut pour toute table à 44,1 kHz seulement.
+  Vérifié sur une carte virtuelle à 44,1 kHz, pas encore sur une vraie RX3.
+- **Grille flexible : Scalpel la calcule** : Clic droit sur un son → Grille → Grille flexible : pour un son que Serato
+  5 n’a pas analysé, Scalpel calcule une grille dont le tempo suit le morceau (batteur, vieux disques, live) et la garde
+  ; « Grille fixe » revient à un seul tempo ; pareil pour toute une crate. À l’analyse, elle n’est prise d’office que si
+  elle colle nettement mieux que la grille fixe. Mesuré contre les grilles de Serato 5 sur 155 sons dont le tempo change
+  : 72 % des temps trouvés à 20 ms près, contre 61 % avec la grille fixe. Réglages → Platines → « Changements de tempo
+  de la grille » : à la mesure ou au temps, comme dans Serato.
+- **Clic droit d’un morceau et d’une crate, comme dans Serato 5** : Morceau : Ajouter à (Préparation, crate Stems),
+  Analyser, Grille (flexible / fixe), Changer le BPM (÷ 2, × 2, d’origine), Note en émoji, Couleur du son (les 20
+  couleurs de Serato), Montrer dans les crates, Marquer comme joué ou non joué, Verrouiller la grille, Relire les infos
+  du fichier, Supprimer (de la crate, de la bibliothèque avec retour possible, corbeille du Mac). Sons introuvables :
+  Chercher partout ou Choisir l’emplacement. Crate : émoji, couleur, Ajouter à, Analyser, grille pour toute la crate,
+  Relire les infos, Crate favorite (en tête de liste), Renommer, Supprimer ou Masquer. Rien n’est écrit dans Serato.
+- **Sur la platine : Acapella, Repeat, FLIP, saut de temps, Autoplay** : Un bouton micro dans la tête de platine joue
+  la voix seule, puis le morceau entier. « Repeat » rejoue le morceau à la fin. Nouvel onglet FLIP sur les pads :
+  enregistrer et rejouer une suite de hot cues (pads 1 à 6 rejouent, 7 enregistre, 8 boucle, Maj efface). Boutons ◀ N ▶
+  pour sauter d’un nombre de temps (Réglages → Platines → Boutons de saut). Autoplay, en bas de la bibliothèque : charge
+  et lance le morceau suivant de la liste à la fin du morceau.
+- **Les réglages de Serato 5, vérifiés dans Serato** : Chaque réglage a été comparé à Serato DJ Pro 5 ouvert (bulles
+  d’aide, essais sur ses platines). Mode de SYNC : Smart (tempo et temps gardés calés), Simple (calés une fois à
+  l’appui), Coupée ; Garder la SYNC au chargement ; Caler les points sur la grille ; Pas du Quantize (1/16 à 4 temps) ;
+  Poser un hot cue d’une touche (1 à 0 sans ⌘) ; Cue Loops (pendant une boucle, 1 à 0 la rangent dans un hot cue qui la
+  rallume ; ceux écrits par Serato sont lus) ; Ranger les cues dans l’ordre ; Retour du SLIP (1/2 à 8 temps) ; Démarrage
+  et Arrêt freinés, avec le même bouton que Serato (rampe mesurée, jusqu’à 24,6 s) ; Aiguille bloquée pendant la lecture
+  (Maj passe) ; Éteindre les effets au chargement ; BPM à 1 ou 2 décimales ; tempo écrit sur la forme d’onde là où il
+  change.
+- **Tonalité calculée comme Serato, et menu Analyser** : Pour un son sans tonalité, Scalpel la calcule avec la méthode
+  de Serato 5 : 89 % identiques à Serato et 97 % compatibles en Camelot sur 596 sons, en 0,4 s par son. Notation au
+  choix : Camelot, Open Key ou classique. Bouton « Analyser ▾ » dans la bibliothèque : la liste ouverte, toute la
+  bibliothèque, arrêter ; les sons ajoutés peuvent être analysés d’office.
+- **Bibliothèque : pochettes, colonnes par crate, Day Mode** : Vue avec les pochettes (▦) ; colonnes propres à une
+  crate ; colonne « Joué » avec le nombre de lectures ; Day Mode (☀) pour le plein soleil ; titres et artistes masqués
+  pour un écran filmé (⌥ /) ; morceaux déjà joués estompés, en couleur ou sans marque, remis à zéro au lancement si tu
+  veux ; bibliothèque protégée en soirée (rien ne s’efface par erreur) ; le morceau choisi peut rester au milieu de la
+  liste ; les sons chargés peuvent rester dans Préparation. Les playlists de l’app Musique en crates, avec leurs étoiles
+  (à tester).
+- **Journal : non joués, exports, Live Playlist** : Dans le Journal : démarrer et terminer une soirée, insérer un
+  morceau joué ailleurs, voir les sons chargés mais pas joués, remettre les joués à zéro, exporter la setlist en texte,
+  CSV, M3U ou en crate. Live Playlist : la setlist en direct sur une page du Wi-Fi du lieu, avec un QR code.
+- **Table, affichage, son vers une autre app, aide** : Table : hausse de l’EQ (+12, +6, +3 ou 0 dB), côté du
+  crossfader par platine (A, THRU, B), fondu Power ou Linéaire. Affichage : formes d’onde sans couleurs d’EQ, images par
+  seconde, haute résolution, liste des cues avec leurs temps. Audio : le master copié vers une autre sortie (BlackHole,
+  Loopback… pour OBS ou un live) et le morceau en cours écrit dans un fichier texte (à tester). Aide : bulles d’aide
+  coupables, touches du clavier affichées sur les platines, touches de jeu coupables.
+- **Vinyles et CDJ timecode : les réglages de Serato (à tester)** : Anti-Drift, pose d’aiguille en relatif (à
+  l’endroit lu sur le disque, ou sur un hot cue), Sticker Lock (au plus près, en avant, en arrière), boucles réglées au
+  disque. Jamais essayés sur un vrai disque timecode.
+- **Effets : 66 au lieu de 20, dont 15 calés sur Serato par la mesure** : 46 effets de plus, avec les noms de Serato
+  5, une recherche par nom et des favoris (étoile ; le sélecteur de la table ne tourne alors que sur eux). 15 sont calés
+  sur ceux de Serato 5, mesurés un par un dans Serato (signal d’essai enregistré, puis comparaison) : Delay, Low Cut
+  Echo, Multi Tap Delay, Version Echo, Drive Filter, Wah Filter, Tremolo, Pansformer, Distortion, Lo-Fi Warmth, Bright
+  Reverb, Empty Mall Verb, Epic Reverb, Next Door Verb, Vast Reverb. Les 31 autres nouveaux sont faits d’après leur nom
+  et pas encore mesurés (à tester) : ils peuvent sonner autrement que dans Serato. Braker et Roll Out manquent encore.
+- **Corrigé : la recherche écrasée sur un écran de 13 pouces** : Sur un écran de 1 440 points de large, le champ de
+  recherche de la bibliothèque n’affichait plus que « C… » ; il a retrouvé sa largeur. À 1 100 points, le bouton plein
+  écran ne sort plus de la fenêtre.
+
+<details><summary>In English (November 12, 2026)</summary>
+
+- **XDJ-RX3: sound now comes out of the master (to be tested)**: Reported by Dj Adrian Reid: with 1.16, every control
+  of the XDJ-RX3 responded but nothing came out of the master. The RX3 sound card only runs at 44.1 kHz; Scalpel, which
+  works at 48 kHz, refused it and sent the sound to the Mac output. Scalpel now opens such a card at its own rate and
+  converts its engine to it (exact level, 0.7 ms more). This applies to any 44.1 kHz-only controller. Checked on a
+  virtual 44.1 kHz card, not yet on a real RX3.
+- **Flexible beatgrid: Scalpel computes it**: Right-click a track → Beatgrid → Flexible beatgrid: for a track Serato 5
+  has not analysed, Scalpel computes a grid whose tempo follows the track (live drummer, old records) and keeps it;
+  “Fixed beatgrid” goes back to one tempo; same for a whole crate. During analysis it is only chosen by itself when it
+  clearly fits better than the fixed grid. Measured against Serato 5 grids on 155 tracks whose tempo changes: 72 % of
+  beats found within 20 ms, against 61 % with the fixed grid. Settings → Decks → “Beatgrid tempo changes”: on bars or on
+  beats, like Serato.
+- **Track and crate right-click menus, like Serato 5**: Track: Add to (Prepare, Stems crate), Analyze, Beatgrid
+  (flexible / fixed), Change BPM (÷ 2, × 2, original), Rating emoji, Track colour (Serato’s 20 colours), Show in crates,
+  Mark as played or unplayed, Lock beatgrid, Re-scan file info, Delete (from the crate, from the library with a way
+  back, Mac trash). Missing tracks: Search everywhere or Choose location. Crate: emoji, colour, Add to, Analyze,
+  beatgrid for the whole crate, Re-scan info, Favourite crate (top of the list), Rename, Delete or Hide. Nothing is
+  written to Serato.
+- **On the deck: Acapella, Repeat, FLIP, beat jump, Autoplay**: A mic button in the deck header plays the vocal alone,
+  then the full track. “Repeat” plays the track again at the end. New FLIP tab on the pads: record and replay a sequence
+  of hot cues (pads 1 to 6 replay, 7 records, 8 loops, Shift erases). ◀ N ▶ buttons jump a number of beats (Settings →
+  Decks → Beat jump buttons). Autoplay, at the bottom of the library: loads and starts the next track of the list when
+  the track ends.
+- **Serato 5 settings, checked in Serato**: Each setting was compared with Serato DJ Pro 5 open (tooltips, trials on
+  its decks). Sync mode: Smart (tempo and beats kept matched), Simple (matched once on the press), Off; Maintain sync on
+  track load; Snap to beatgrid; Quantize step (1/16 to 4 beats); Set a hot cue with one key (1 to 0 without ⌘); Cue
+  Loops (during a loop, 1 to 0 store it in a hot cue that turns it back on; those written by Serato are read); Sort cues
+  chronologically; SLIP release (1/2 to 8 beats); braked Start and Stop, with the same knob as Serato (measured ramp, up
+  to 24.6 s); Needle locked during playback (Shift passes); Turn off FX on load; BPM with 1 or 2 decimals; tempo written
+  on the waveform where it changes.
+- **Key detected like Serato, and the Analyze menu**: For a track with no key, Scalpel computes it with Serato 5’s
+  method: 89 % identical to Serato and 97 % Camelot-compatible on 596 tracks, in 0.4 s per track. Notation of your
+  choice: Camelot, Open Key or classical. “Analyze ▾” button in the library: the open list, the whole library, stop;
+  added tracks can be analysed automatically.
+- **Library: artwork, per-crate columns, Day Mode**: Artwork view (▦); columns of their own for a crate; “Played”
+  column with the play count; Day Mode (☀) for bright sunlight; titles and artists hidden for a filmed screen (⌥ /);
+  played tracks dimmed, coloured or unmarked, reset at launch if you like; library protected during a gig (nothing gets
+  erased by mistake); the selected track can stay in the middle of the list; loaded tracks can stay in Prepare. Music
+  app playlists as crates, with their stars (to be tested).
+- **Journal: unplayed tracks, exports, Live Playlist**: In the Journal: start and end a gig, insert a track played
+  elsewhere, see tracks loaded but not played, reset played tracks, export the setlist as text, CSV, M3U or a crate.
+  Live Playlist: the setlist live on a page of the venue’s Wi-Fi, with a QR code.
+- **Mixer, display, sound to another app, help**: Mixer: EQ boost (+12, +6, +3 or 0 dB), crossfader side per deck (A,
+  THRU, B), Power or Linear fade. Display: waveforms without EQ colours, frames per second, high resolution, cue list
+  with times. Audio: the master copied to another output (BlackHole, Loopback… for OBS or a livestream) and the current
+  track written to a text file (to be tested). Help: tooltips can be turned off, keyboard keys shown on the decks, play
+  keys can be turned off.
+- **Timecode vinyl and CDJs: Serato’s settings (to be tested)**: Anti-Drift, needle dropping in relative mode (to the
+  position read on the record, or to a hot cue), Sticker Lock (nearest, forwards, backwards), loops adjusted with the
+  vinyl. Never tried on a real timecode record.
+- **Effects: 66 instead of 20, 15 of them matched to Serato by measurement**: 46 more effects, with Serato 5’s names,
+  a search by name and favourites (star; the controller’s selector then only cycles through them). 15 are matched to
+  Serato 5’s, measured one by one in Serato (test signal recorded, then compared): Delay, Low Cut Echo, Multi Tap Delay,
+  Version Echo, Drive Filter, Wah Filter, Tremolo, Pansformer, Distortion, Lo-Fi Warmth, Bright Reverb, Empty Mall Verb,
+  Epic Reverb, Next Door Verb, Vast Reverb. The other 31 new ones are built from their names and not measured yet (to be
+  tested): they may sound different from Serato. Braker and Roll Out are still missing.
+- **Fixed: the search box squeezed on a 13-inch screen**: On a 1,440-point-wide screen, the library search box only
+  showed “C…”; it has its width back. At 1,100 points, the full-screen button no longer leaves the window.
+
+</details>
 
 ## 1.16 — 11 novembre 2026
 
