@@ -30,8 +30,8 @@ Chaque demande a été relue sur le forum de Serato, et cherchée dans toutes se
 ## Et là, on n'a même pas commencé
 
 - **Intro Lab** : fabrique une version intro de DJ (8 mesures de beat, les stems qui entrent un à un), exportée à côté
-  de l'original avec cues et grille.
-- **Mélodie** : la voix, la mélodie ou la basse d'un son en notes, à corriger façon Melodyne, rejouées avec le son du stem.
+  de l'original avec cues et grille. Sur la ligne Mélodie, chaque mesure peut jouer une variation (harmonie, arpèges,
+  phrases façon Nora…) avec son propre instrument, et un bloc se glisse pour être copié (à tester).
 - **Voix studio** : en plus des stems, une voix séparée encore plus propre sur le rap, calculée au chargement.
 - **Sorties propres** : écho, filtre, roll, backspin, tirées au hasard, calées sur la mesure.
 - **Transition de tempo** en un bouton, calée sur la phase ; la grille passe au vert quand c'est calé.
@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**31 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**32 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.23](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.23)** (13 novembre 2026) : Intro Lab : un instrument par bloc de mélodie · Intro Lab : glisser un bloc pour le copier · Plus de place à l’écran : marges resserrées partout, barre du haut plus fine · Une nouvelle version ? Scalpel DJ te prévient
 - **[1.22](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.22)** (13 novembre 2026) : Intro Lab : les variations de mélodie refaites pour sonner juste (à tester)
 - **[1.21](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.21)** (13 novembre 2026) : Intro Lab : variations de mélodie au clic droit (à tester) · Les hot cues se déplacent à la souris · Mode incognito par deux appuis sur Fn (à tester) · Intro Lab : forme d’onde et choix du nombre de mesures réparés
 - **[1.19](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.19)** (12 novembre 2026) : Plus d’image sautée au lancement d’un morceau quand les stems démarrent (même éclairage d’ambiance, stems aussi rapides)
-- **[1.18](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.18)** (12 novembre 2026) : La forme d’onde ne se fige plus au départ d’un morceau (signalé par Dj Adrian Reid) · Charger un morceau ne fige plus l’écran · Un écran fluide juste après « Démarrer »
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
@@ -120,7 +120,7 @@ What DJs have asked Serato for on its forum, still missing in Serato DJ Pro 5.0.
 - **A remote**: Serato Remote was discontinued; here your phone is the remote, paired with a QR code.
 - **Downloads into crates** with one drag, and **stems on the EQ knobs** with bass + kick together.
 
-And more: Intro Lab (DJ intro edits), Melody (Melodyne-style note editing), studio vocal stems, clean random exits,
+And more: Intro Lab (DJ intro edits, melody variations with one instrument per block), studio vocal stems, clean random exits,
 one-button tempo transition, duplicates (keeps the real 320), bass without a sub, Scalpel Sound, gig calendar, recording
 with a ready tracklist. Free here, paid in Serato: high-quality key lock and DVS. Less total CPU than Serato DJ Pro with
 two decks on an M1 MacBook Air (72 % vs 81 %). First launch: open it once, then System Settings → Privacy & Security →
