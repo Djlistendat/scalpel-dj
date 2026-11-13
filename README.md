@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**29 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**30 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.21](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.21)** (13 novembre 2026) : Intro Lab : variations de mélodie au clic droit (à tester) · Les hot cues se déplacent à la souris · Mode incognito par deux appuis sur Fn (à tester) · Intro Lab : forme d’onde et choix du nombre de mesures réparés
 - **[1.19](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.19)** (12 novembre 2026) : Plus d’image sautée au lancement d’un morceau quand les stems démarrent (même éclairage d’ambiance, stems aussi rapides)
 - **[1.18](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.18)** (12 novembre 2026) : La forme d’onde ne se fige plus au départ d’un morceau (signalé par Dj Adrian Reid) · Charger un morceau ne fige plus l’écran · Un écran fluide juste après « Démarrer »
 - **[1.17](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.17)** (12 novembre 2026) : XDJ-RX3 : le son sort du master (à tester) · Grille flexible calculée par Scalpel · Clic droit comme dans Serato 5 · Réglages de Serato 5 vérifiés dans Serato · 66 effets, dont 15 calés sur Serato par la mesure
-- **[1.16](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.16)** (11 novembre 2026) : Pioneer DJ XDJ-RX3 (à tester), demandée par Dj Adrian Reid
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
