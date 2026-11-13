@@ -1,13 +1,38 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **28 versions publiées** en 9 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **29 versions publiées** en 9 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.19 — 12 novembre 2026
+
+- **Plus d’image sautée au lancement d’un morceau quand les stems démarrent** : Suite de la 1.18. Dans la seconde qui
+  suit le lancement, l’éclairage d’ambiance (la lumière bleue ou orange qui s’allume derrière la platine à l’antenne)
+  faisait redessiner toute la fenêtre à chaque image, pile au moment où le calcul des stems prend la carte graphique :
+  une image sautée dans un départ sur deux, et de temps en temps un blocage de 85 à 270 ms. Les deux lumières ne
+  couvrent plus que la zone où elles se voient : même image (1 niveau sur 255 d’écart au plus), même fondu de 0,8 s,
+  et les stems arrivent aussi vite qu’avant. Les formes d’onde des stems, encore vides au chargement, ne sont plus
+  calculées ni envoyées à la carte graphique pour rien. Mesuré sur un MacBook Air M1 en économie d’énergie, 12 départs
+  : 10 sans aucune image lente pendant les 4 premières secondes, 2 avec une seule image de 33 ms à l’instant même du
+  lancement ; avant, 2 à 5 départs sur 8 étaient touchés entre 0,6 et 0,9 s.
+
+<details><summary>In English (November 12, 2026)</summary>
+
+- **No more skipped frame when a track starts while the stems are starting**: Follow-up to 1.18. In the second after a
+  track starts, the ambient lighting (the blue or orange glow that lights up behind the deck on air) made the whole
+  window redraw on every frame, right when the stems computation takes the graphics chip: one skipped frame in every
+  other start, and now and then a 85 to 270 ms stall. The two glows now only cover the area where they can be seen:
+  same picture (1 level out of 255 at most), same 0.8 s fade, and the stems arrive as fast as before. The stem
+  waveforms, still empty at load, are no longer computed and sent to the graphics chip for nothing. Measured on an M1
+  MacBook Air in Low Power Mode, 12 starts: 10 with no slow frame at all in the first 4 seconds, 2 with a single 33 ms
+  frame at the very instant of the start; before, 2 to 5 starts out of 8 were hit between 0.6 and 0.9 s.
+
+</details>
 
 ## 1.18 — 12 novembre 2026
 
