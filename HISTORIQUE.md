@@ -1,13 +1,62 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **31 versions publiées** en 10 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **32 versions publiées** en 10 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.23 — 13 novembre 2026
+
+- **Intro Lab : un instrument par bloc de mélodie** : Jusqu’à la 1.22, l’instrument d’une variation valait pour tout
+  le morceau : mettre le piano sur une mesure le mettait partout. Chaque bloc (une mesure de la ligne Mélodie qui joue
+  une variation) a maintenant le sien : piano électrique sur l’un, lead, nappe, pluck ou basse 808 sur un autre, et de
+  même « Garder la mélodie d’origine dessous ». Clic droit sur le bloc, puis Instrument. Le nom de l’instrument est
+  écrit sur le bloc. Un edit déjà fait garde son réglage.
+- **Intro Lab : glisser un bloc pour le copier** : Un bloc qui te plaît se glisse vers une autre mesure, à gauche ou
+  à droite : il y est copié tel quel (variation, instrument, mélodie dessous), sans rien régler de nouveau. Avec ⇧
+  tenu, il est posé sur toutes les mesures traversées. Lâché hors de la ligne, ou Échap : rien ne change. La copie ne
+  demande aucun calcul (c’est le même son) et reste indépendante : on peut ensuite lui donner un autre instrument.
+- **Plus de place à l’écran : marges resserrées partout, barre du haut plus fine** : Les marges ont été réduites un
+  peu partout pour gagner de la place. Barre du haut : 34 px au lieu de 40, le logo intact. Platines : bords de 6 px
+  au lieu de 12, la place va au disque et aux pads (dans une fenêtre de 1280 × 800, en Vertical, le disque passe de
+  129 à 149 px). Intro Lab, Journal, Bookings et Réglages ont maintenant les mêmes marges fines que l’écran Mix. Dans
+  Intro Lab, chaque préréglage tient sur une ligne ; dans Réglages, toutes les sections se voient sans défiler.
+  L’icône du téléphone (télécommande) est redessinée : un téléphone qui émet, plus facile à reconnaître.
+- **Une nouvelle version ? Scalpel DJ te prévient** : Quand une version plus récente est sortie, Scalpel DJ le dit :
+  une pastille sur l’écran de démarrage, un message une fois, un point sur l’onglet Réglages, et dans Réglages → À
+  propos ce qu’elle change et le bouton pour la télécharger. La question est posée à GitHub au lancement, puis deux
+  fois par jour, hors de l’écran et du son, et jamais pendant qu’une platine joue ou que REC enregistre. Sans
+  Internet, rien ne s’affiche et rien n’attend. Rien de ton Mac n’est envoyé, rien n’est téléchargé ni installé tout
+  seul. L’annonce se coupe dans Réglages → À propos.
+
+<details><summary>In English (November 13, 2026)</summary>
+
+- **Intro Lab: one instrument per melody block**: Up to 1.22, a variation’s instrument applied to the whole track:
+  putting the piano on one bar put it everywhere. Each block (a bar of the Melody row that plays a variation) now has
+  its own: electric piano on one, lead, pad, pluck or 808 bass on another, and likewise “Keep the original melody
+  underneath”. Right-click the block, then Instrument. The instrument’s name is written on the block. An edit you
+  already made keeps its setting.
+- **Intro Lab: drag a block to copy it**: A block you like can be dragged to another bar, left or right: it is
+  copied there as is (variation, instrument, melody underneath), with nothing to set up again. Hold ⇧ to drop it on
+  every bar crossed. Released outside the row, or Esc: nothing changes. The copy needs no computation (it is the same
+  sound) and stays independent: you can then give it another instrument.
+- **More room on screen: tighter margins everywhere, thinner top bar**: Margins have been trimmed all over to save
+  room. Top bar: 34 px instead of 40, the logo untouched. Decks: 6 px edges instead of 12, the room goes to the
+  platter and the pads (in a 1280 × 800 window, in Vertical, the platter grows from 129 to 149 px). Intro Lab,
+  Journal, Bookings and Settings now have the same thin margins as the Mix screen. In Intro Lab, each preset fits on
+  one line; in Settings, every section shows without scrolling. The phone icon (remote) is redrawn: a phone that
+  transmits, easier to recognise.
+- **A new version? Scalpel DJ tells you**: When a newer version is out, Scalpel DJ says so: a pill on the start
+  screen, a message once, a dot on the Settings tab, and in Settings → About what it changes and the button to
+  download it. The question is asked to GitHub at launch, then twice a day, off the screen and off the audio, and
+  never while a deck is playing or REC is recording. With no Internet, nothing shows and nothing waits. Nothing from
+  your Mac is sent, nothing is downloaded or installed by itself. The notice can be turned off in Settings → About.
+
+</details>
 
 ## 1.22 — 13 novembre 2026
 
