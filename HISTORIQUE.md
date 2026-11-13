@@ -1,13 +1,67 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **29 versions publiées** en 9 jours, plus de 80 versions de
-travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **30 versions publiées** en 10 jours, plus de 80 versions de
+travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.21 — 13 novembre 2026
+
+- **Intro Lab : variations de mélodie au clic droit (à tester)** : Clic droit sur une case de la ligne Mélodie : un
+  menu déroulant de 37 variations de la mélodie de cette mesure, en 12 familles (harmonie, octaves, arpèges, miroir, à
+  l’envers, nouveau rythme, ornements, épurée, question-réponse, accords, ligne de basse). La variation est rejouée
+  avec le son du stem lui-même, au même niveau, et ne remplace que la mélodie de cette mesure ; « Mélodie d’origine »
+  la rend. L’edit est refait en 1 à 3 secondes, la case porte une note (♪). C’était l’idée de départ du moteur Mélodie
+  : son onglet à part quitte la barre du haut. Pas encore jugé à l’oreille : les notes relevées sur un stem séparé
+  sont approximatives.
+- **Les hot cues se déplacent à la souris** : Pris par le haut de son pad (la ligne du numéro), un hot cue se glisse
+  sur un autre pad : les deux échangent leurs places ; sur un pad vide, il y va. Comme dans Serato, où un cue se prend
+  par son heure. Le reste du pad déclenche le cue comme avant. Sans effet quand les cues sont rangés dans l’ordre du
+  morceau (réglage).
+- **Mode incognito : deux appuis sur Fn (à tester)** : Deux appuis brefs sur la touche Fn (🌐), la même sur tous les
+  claviers de Mac, masquent ou remontrent titres, artistes et pochettes (le « Hide Track/Artist » de Serato, déjà sur
+  ⌥ /). À couper dans Réglages → Bibliothèque si macOS se sert déjà de ce double appui (dictée). Vérifié avec de faux
+  appuis envoyés au système, pas encore sur un vrai clavier.
+- **Intro Lab : la forme d’onde du morceau est revenue** : Depuis la 1.18, la forme d’onde du morceau ouvert dans
+  Intro Lab ne montrait plus que son début (un cinquième à un tiers du morceau) : le son partait au calcul avant que
+  la forme d’onde ait fini de le lire. Elle couvre de nouveau tout le morceau, et un contrôle automatique le vérifie
+  maintenant à chaque version.
+- **Intro Lab : le nombre de mesures et la sortie se choisissent de nouveau** : Depuis la 1.13, « Intro, en mesures »
+  (8, 16, 32) et « Sortie » étaient écrasés à 2 pixels de haut dès que la colonne de gauche débordait (écran de 13
+  pouces, ou un préréglage personnel gardé) : on ne pouvait plus les choisir. Ils ont retrouvé leur hauteur et sont
+  passés en tête de colonne, toujours visibles sans défiler. La ligne d’infos sous l’edit n’est plus coupée quand les
+  reprises proposées tiennent sur deux rangées.
+
+<details><summary>In English (November 13, 2026)</summary>
+
+- **Intro Lab: melody variations on right-click (to be tested)**: Right-click a cell of the Melody row: a drop-down
+  list of 37 variations of that bar’s melody, in 12 families (harmony, octaves, arpeggios, mirror, backwards, new
+  rhythm, ornaments, stripped down, call and response, chords, bass line). The variation is replayed with the sound of
+  the stem itself, at the same level, and only replaces the melody of that bar; “Original melody” brings it back. The
+  edit is rebuilt in 1 to 3 seconds, and the cell carries a note (♪). This was the original idea behind the Melody
+  engine: its separate tab leaves the top bar. Not judged by ear yet: the notes read from a separated stem are
+  approximate.
+- **Hot cues can be moved with the mouse**: Grabbed by the top of its pad (the number line), a hot cue can be dragged
+  onto another pad: the two swap places; on an empty pad, it moves there. Like in Serato, where a cue is grabbed by
+  its time. The rest of the pad triggers the cue as before. No effect when cues are sorted in track order (setting).
+- **Incognito mode: press Fn twice (to be tested)**: Two quick presses on the Fn (🌐) key, the same on every Mac
+  keyboard, hide or show titles, artists and artwork (Serato’s “Hide Track/Artist”, already on ⌥ /). Switch it off in
+  Settings → Library if macOS already uses that double press (dictation). Checked with simulated presses sent to the
+  system, not on a real keyboard yet.
+- **Intro Lab: the track waveform is back**: Since 1.18, the waveform of the track opened in Intro Lab only showed its
+  beginning (a fifth to a third of the track): the audio left for processing before the waveform had finished reading
+  it. It covers the whole track again, and an automatic check now verifies it for every version.
+- **Intro Lab: the number of bars and the outro can be chosen again**: Since 1.13, “Intro, in bars” (8, 16, 32) and
+  “Outro” were squashed to 2 pixels high as soon as the left column overflowed (13-inch screen, or a saved personal
+  preset): they could no longer be chosen. They have their height back and moved to the top of the column, always
+  visible without scrolling. The info line under the edit is no longer cut off when the suggested comebacks take two
+  rows.
+
+</details>
 
 ## 1.19 — 12 novembre 2026
 
