@@ -1,13 +1,50 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **27 versions publiées** en 9 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **28 versions publiées** en 9 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.18 — 12 novembre 2026
+
+- **La forme d’onde ne se fige plus au départ d’un morceau** : Signalé par Dj Adrian Reid : un morceau lancé dès qu’il
+  est chargé, et pendant deux secondes la forme d’onde avançait par à-coups (le son, lui, ne bougeait pas). Le morceau
+  partait vers le calcul des stems en gros paquets, coup sur coup, sur le fil qui dessine l’écran ; il part maintenant
+  en petits paquets, autant qu’il en tient dans une image, et les stems ne démarrent pas plus tard (envoi en 0,1 s).
+  Mesuré sur un MacBook Air M1 : 13 images figées (67 à 134 ms) à chaque départ avant ; après, 7 départs sur 8 sans
+  aucune, et sinon une ou deux, au moment où le calcul des stems démarre sur la carte graphique.
+- **Charger un morceau ne fige plus l’écran** : Pendant qu’une platine joue, charger l’autre figeait l’image quatre à
+  cinq fois, de 100 à 230 ms à chaque fois : la liste et les suggestions de la bibliothèque étaient refaites en entier
+  à chaque étape du chargement, le son était mélangé d’un bloc, le fichier relu quatre fois. Les suggestions ne sont
+  plus refaites que si elles changent, et par petites tranches ; le reste aussi. Mesuré sur 8 chargements : 515 ms
+  d’écran figé par chargement avant, 100 à 160 ms après ; la pire image, 232 ms avant, 85 à 134 ms après.
+- **Un écran fluide juste après « Démarrer »** : Les couleurs de Serato étaient relues d’un bloc sur le fil qui
+  dessine l’écran, et le tempo des samples y était calculé, avec leur tonalité et une grille dont ils n’ont pas
+  besoin. Les deux se font maintenant à part. Mesuré : 30 blocages (3,4 s en tout) après « Démarrer » avant, un seul
+  de 54 ms après.
+
+<details><summary>In English (November 12, 2026)</summary>
+
+- **The waveform no longer freezes when a track starts**: Reported by Dj Adrian Reid: a track started as soon as it
+  was loaded, and for two seconds the waveform moved in jerks (the sound itself was fine). The track was sent to the
+  stems computation in big packets, back to back, on the thread that draws the screen; it now goes in small packets,
+  as many as fit in one frame, and the stems start no later (sent in 0.1 s). Measured on an M1 MacBook Air: 13 frozen
+  frames (67 to 134 ms) at every start before; after, 7 starts out of 8 with none, and otherwise one or two, at the
+  moment the stems computation starts on the graphics chip.
+- **Loading a track no longer freezes the screen**: While one deck was playing, loading the other froze the picture
+  four to five times, 100 to 230 ms each time: the library list and suggestions were rebuilt entirely at each step of
+  the load, the audio was mixed down in one block, the file read four times. Suggestions are now rebuilt only when
+  they change, and in small slices; so is the rest. Measured over 8 loads: 515 ms of frozen screen per load before,
+  100 to 160 ms after; the worst frame, 232 ms before, 85 to 134 ms after.
+- **A smooth screen right after “Start”**: Serato’s colours were read in one block on the thread that draws the
+  screen, and the tempo of the samples was computed there, with their key and a grid they do not need. Both are now
+  done elsewhere. Measured: 30 stalls (3.4 s in all) after “Start” before, a single one of 54 ms after.
+
+</details>
 
 ## 1.17 — 12 novembre 2026
 
