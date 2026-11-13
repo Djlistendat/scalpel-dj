@@ -1,13 +1,42 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **30 versions publiées** en 10 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **31 versions publiées** en 10 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.22 — 13 novembre 2026
+
+- **Intro Lab : les variations de mélodie refaites pour sonner juste (à tester)** : Les variations de la 1.21
+  sonnaient faux. Mesuré sur huit stems : quatre « notes » sur cinq d’un stem de mélodie sont en fait des accords, et
+  la 1.21 ré-accordait ces morceaux d’accords comme une seule note. Maintenant, les variations intelligentes (harmonie
+  à la tierce ou à la sixte, arpèges des accords, arpège sur la mélodie, question-réponse, ornements, nouveau rythme,
+  miroir, épurée, accords, ligne de basse, et treize phrases façon Nora : arpège montant, pluck afro 3-3-2, stabs
+  dancehall à contretemps, rolls trap, reggaeton 3+3+2…) sont fabriquées d’après l’harmonie mesurée dans le morceau :
+  la gamme et l’accord de chaque mesure, d’après ce qui sonne dans le stem et la basse, même quand le tag de tonalité
+  se trompe. Elles sont jouées par un instrument au choix, accordé comme le morceau (pluck, piano électrique, nappe,
+  lead ou basse 808), par-dessus la mélodie d’origine ou à sa place. S’y ajoutent les variations du stem lui-même,
+  cloné d’un bloc : octaves, réponse à l’octave, octaves alternées, à l’envers, demi-tempo. Clic droit sur une case de
+  la ligne Mélodie. Vérifié par la mesure, pas encore jugé à l’oreille.
+
+<details><summary>In English (November 13, 2026)</summary>
+
+- **Intro Lab: melody variations rebuilt to sound in tune (to be tested)**: The variations of 1.21 sounded out of
+  tune. Measured on eight stems: four out of five « notes » in a melody stem are in fact chords, and 1.21 retuned
+  those chunks of chords as if they were one note. Now the smart variations (harmony a third or a sixth away, chord
+  arpeggios, arpeggio on the melody, call and response, ornaments, new rhythm, mirror, pared down, chords, bass line,
+  and thirteen Nora-style phrases: rising arpeggio, afro 3-3-2 pluck, offbeat dancehall stabs, trap rolls, reggaeton
+  3+3+2…) are built from the harmony measured in the track: the scale and the chord of each bar, from what actually
+  sounds in the stem and the bass, even when the key tag is wrong. They are played by an instrument of your choice,
+  tuned like the track (pluck, electric piano, pad, lead or 808 bass), over the original melody or in its place. Added
+  to them are the variations of the stem itself, cloned in one block: octaves, answer at the octave, alternating
+  octaves, backwards, half-time. Right-click a cell of the Melody row. Checked by measurement, not yet judged by ear.
+
+</details>
 
 ## 1.21 — 13 novembre 2026
 
