@@ -1,13 +1,117 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **32 versions publiées** en 10 jours, plus de 80 versions de
-travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20) ne sont jamais sorties seules : leurs nouveautés sont
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **33 versions publiées** en 10 jours, plus de 80 versions de
+travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.30 — 13 novembre 2026
+
+- **Formes d’onde : l’onde réelle, une seule couche** : La forme d’onde des platines dessine maintenant le son
+  lui-même, creux et crêtes, au lieu d’une enveloppe lissée : au zoom, on voit les alternances d’une basse ou d’une
+  grosse caisse, comme dans un éditeur audio. La seconde couche plus large et plus pâle (le contour de crête)
+  disparaît : une seule forme, nette, aux couleurs de Serato. Les EQ, le filtre et les stems coupés la font toujours
+  fondre en direct. Dans le menu des formes d’onde, « Forme » : onde réelle, onde symétrique (repliée des deux côtés,
+  comme Serato) ou l’enveloppe d’avant.
+- **L’écran Mix demande deux fois moins à la carte graphique** : Formes d’onde, vues d’ensemble et textes des platines
+  sont dessinés autrement, pour la même image : ce qui ne dépend que de la ligne de temps est calculé une fois par
+  ligne au lieu d’une fois par point, et les textes ne sont redessinés que lorsqu’ils changent. Mesuré en lecture sur
+  un Mac M1, deux platines : 3 ms par image au lieu de 5 à 6, toujours à 60 images par seconde.
+- **Tonalité calculée : elle ne disparaît plus** : Un son sans grille perdait sa tonalité calculée un chargement sur
+  deux (« — » à la place de la tonalité). Elle reste maintenant affichée.
+- **Un son glissé du Finder revient à la reprise** : Un fichier glissé du Finder sur une platine revient lui aussi
+  avec « Démarrer et reprendre », au même endroit, après une relance ou un plantage. Avant, sa platine revenait vide.
+- **Glisser un son d’une platine vers l’autre** : Comme dans Serato : attrape le titre (ou la pochette, ou le numéro)
+  d’une platine et lâche-le sur l’autre platine ou sur sa forme d’onde : le son s’y charge. Avec « Instant Doubles »
+  (allumé d’office), il arrive au même endroit, au même tempo, et repart calé si l’autre joue. Une platine qui passe à
+  l’antenne reste protégée, comme pour tout chargement.
+- **Onglet des pads allumé en couleur, boucle et pads resserrés, coins moins arrondis** : L’onglet des pads choisi
+  (HOT CUE, STEMS, FLIP, LOOPS, ROLL, SAMPLER, SORTIES) se remplit de sa couleur : on le voit d’un coup d’œil, la
+  nuit, en plein set ; les autres gardent leur trait de couleur. Sur la platine, les boutons de boucle sont serrés
+  entre eux et mieux séparés des huit pads, eux aussi un peu plus serrés. Partout dans l’app, les coins arrondis sont
+  réduits de moitié (boutons, plaques, champs, menus, fenêtres) ; ce qui est rond le reste (disques, potards,
+  voyants). Aussi : les champs du Journal sont alignés et leurs textes d’aide entiers, les curseurs de l’Égaliseur et
+  du Micro sont dessinés, et les dernières flèches écrites en caractères (mois, Intro Lab, Mélodie, sous-menus) sont
+  de vraies icônes.
+- **Barre de la liste, onglets et boucle : la même finition partout** : Dans la barre de la liste, plus rien ne se
+  coupe : le champ de recherche garde son texte entier, « Compatibles » devient une icône quand la place manque (au
+  lieu de « C… »), et la taille du texte, les pochettes et le menu Analyser ont de vraies icônes. La barre du bas
+  affiche toujours ce que fait chaque bouton (Charger, Deck 1, Deck 2, Pré-écoute, Rechercher) ; sur un écran étroit,
+  elle ne montrait que des touches. Dans toutes les dispositions : les onglets des pads en mots entiers quand ils
+  tiennent, la boucle en 1/2X et 2X avec un reloop dessiné, GRILLE et la plage du tempo en vrais boutons. Au survol
+  d’une ligne, le bouton de pré-écoute ne coupe plus la pastille des versions en deux.
+- **La platine : un disque bien rond, des commandes mieux dessinées** : Le disque a maintenant une jante : la pochette
+  tourne à l’intérieur et le bord du disque reste le même tout autour. Avant, la pochette allait jusqu’au bord : il
+  prenait sa couleur à cet endroit, claire ici, sombre là, et semblait se déformer en tournant ; un liseré en
+  pointillé courait aussi le long du bord. En Vertical et en Horizontal, Key lock, Slip, Reverse et Éjecter mordaient
+  dans le disque : ce sont maintenant de petites icônes dans ses coins, hors du cercle. Les onglets des pads
+  s’écrivent en entier (SAMPLER, SORTIES au lieu de SMPL, SORT.) ; chacun garde sa couleur, par un trait fin du côté
+  de ses pads. Les flèches, le reloop, − et + sont dessinés au lieu d’être des caractères, et les boutons d’une même
+  platine ont la même forme. La boucle se divise et se double avec 1/2X et 2X, comme sur la table.
+- **La platine range ses boutons comme Serato** : Dans les dispositions Vertical et Horizontal, la platine reprend la
+  place des boutons de Serato DJ Pro. Le pitch est au bord extérieur, avec − + (coup de vitesse) et RANGE dessous. Les
+  onglets des pads sont en colonne, dans l’ordre de Serato : HOT CUE, STEMS, FLIP, LOOPS, puis ROLL, SAMPLER et
+  SORTIES. Sous les pads : IN, OUT, LOOP, reloop, 1/2X et 2X, puis les boucles automatiques par taille (de 1/8 à 16
+  temps, les flèches pour aller de 1/32 à 32). Autour du disque : SYNC en haut à gauche, CUE et lecture en haut à
+  droite ; dans ses coins, en icônes : Key lock et Slip en haut, Reverse en bas à gauche, Éjecter en bas à droite ; le
+  vumètre au bord. Dans la tête, sous le micro (Acapella) et la tonalité : Instrumental (la voix coupée) et Key Sync
+  entre ses deux flèches. Un hot cue vide montre une croix. Le disque est plus grand quand la place le permet. Les
+  platines repliées, l’Extended et la Classique gardent leur rangement.
+
+<details><summary>In English (November 13, 2026)</summary>
+
+- **Waveforms: the real wave, a single layer**: The deck waveform now draws the sound itself, troughs and peaks,
+  instead of a smoothed envelope: zoomed in, you see the cycles of a bass or a kick, as in an audio editor. The
+  second, wider and paler layer (the peak outline) is gone: one crisp shape, in Serato’s colours. EQs, the filter and
+  muted stems still make it shrink live. In the waveform menu, “Shape”: real wave, mirrored wave (folded on both
+  sides, like Serato) or the previous envelope.
+- **The Mix screen asks half as much of the graphics card**: Waveforms, overviews and deck texts are drawn
+  differently, for the same picture: what only depends on the time line is computed once per line instead of once per
+  pixel, and texts are only redrawn when they change. Measured while playing on an M1 Mac, two decks: 3 ms per frame
+  instead of 5 to 6, still at 60 frames per second.
+- **Computed key: it no longer disappears**: A track without a beatgrid lost its computed key every other load (“—”
+  instead of the key). It now stays displayed.
+- **A track dragged from the Finder comes back on resume**: A file dragged from the Finder onto a deck now also comes
+  back with “Start and resume”, at the same position, after a relaunch or a crash. Before, its deck came back empty.
+- **Drag a track from one deck to the other**: As in Serato: grab the title (or the cover, or the deck number) of a
+  deck and drop it on the other deck or on its waveform: the track loads there. With Instant Doubles (on by default),
+  it lands at the same position and tempo, and starts in time if the other deck is playing. A deck that is live stays
+  protected, as for any load.
+- **Selected pad tab lit in its colour, tighter loop and pads, less rounded corners**: The selected pad tab (HOT CUE,
+  STEMS, FLIP, LOOPS, ROLL, SAMPLER, EXITS) now fills with its colour: you see it at a glance, at night, mid-set; the
+  others keep their colour strip. On the deck, the loop buttons sit closer together and are better separated from the
+  eight pads, which are a little tighter too. Everywhere in the app, rounded corners are halved (buttons, panels,
+  fields, menus, windows); what is round stays round (platters, knobs, lights). Also: the Journal fields are aligned
+  and their hints are no longer cut, the Equalizer and Mic sliders are drawn, and the last arrows written as
+  characters (months, Intro Lab, Melody, submenus) are real icons.
+- **List toolbar, tabs and loop: the same finish everywhere**: In the list toolbar, nothing is cut off any more: the
+  search field keeps its full text, “Compatible” becomes an icon when space is short (instead of “C…”), and text size,
+  cover art and the Analyze menu have proper icons. The bottom bar always says what each button does (Load, Deck 1,
+  Deck 2, Preview, Search); on a narrow screen it only showed keys. In every layout: pad tabs in full words when they
+  fit, the loop as 1/2X and 2X with a drawn reloop, GRID and the tempo range as real buttons. When you hover a row,
+  the preview button no longer cuts the versions badge in half.
+- **The deck: a truly round platter, better-drawn controls**: The platter now has a rim: the cover art spins inside it
+  and the edge of the platter stays the same all the way round. Before, the art went right to the edge, which took its
+  colour at that spot, light here, dark there, and seemed to change shape as it turned; a dotted line also ran along
+  the edge. In Vertical and Horizontal, Key lock, Slip, Reverse and Eject were biting into the platter: they are now
+  small icons in its corners, outside the circle. The pad tabs are written in full (SAMPLER, EXITS instead of SMPL,
+  EXIT); each keeps its colour, as a thin line on the side of its pads. Arrows, reloop, − and + are drawn instead of
+  being typed characters, and the buttons of a deck share the same shape. The loop is halved and doubled with 1/2X and
+  2X, as on the controller.
+- **The deck puts its buttons where Serato has them**: In the Vertical and Horizontal layouts, the deck now puts its
+  buttons where Serato DJ Pro has them. Pitch sits on the outer edge, with − + (nudge) and RANGE below it. The pad
+  tabs are in a column, in Serato’s order: HOT CUE, STEMS, FLIP, LOOPS, then ROLL, SAMPLER and EXITS. Under the pads:
+  IN, OUT, LOOP, reloop, 1/2X and 2X, then auto loops by size (1/8 to 16 beats, arrows to reach 1/32 to 32). Around
+  the platter: SYNC top left, CUE and play top right; in its corners, as icons: Key lock and Slip at the top, Reverse
+  bottom left, Eject bottom right; the meter on the edge. In the header, under the mic (Acapella) and the key:
+  Instrumental (vocals muted) and Key Sync between its two arrows. An empty hot cue shows a cross. The platter gets
+  bigger when there is room. Folded decks, Extended and Classic keep their arrangement.
+
+</details>
 
 ## 1.23 — 13 novembre 2026
 
