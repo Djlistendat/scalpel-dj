@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**34 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**35 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.33](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.33)** (14 novembre 2026) : Charger un son sans faire sauter l’autre platine
 - **[1.32](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.32)** (14 novembre 2026) : Potard MASTER dans la barre du haut · Forme d’onde et disque : un défilement régulier · Forme d’onde nette en mouvement · Lecture fluide juste après un chargement · Table en bande : les potards tiennent dans l’écran
 - **[1.30](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.30)** (13 novembre 2026) : Formes d’onde : l’onde réelle, une seule couche · L’écran Mix demande deux fois moins à la carte graphique · Tonalité calculée : elle ne disparaît plus · Un son glissé du Finder revient à la reprise · Glisser un son d’une platine vers l’autre · Onglet des pads allumé en couleur, boucle et pads resserrés, coins moins arrondis · Barre de la liste, onglets et boucle : la même finition partout · La platine : un disque bien rond, des commandes mieux dessinées · La platine range ses boutons comme Serato
 - **[1.23](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.23)** (13 novembre 2026) : Intro Lab : un instrument par bloc de mélodie · Intro Lab : glisser un bloc pour le copier · Plus de place à l’écran : marges resserrées partout, barre du haut plus fine · Une nouvelle version ? Scalpel DJ te prévient
-- **[1.22](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.22)** (13 novembre 2026) : Intro Lab : les variations de mélodie refaites pour sonner juste (à tester)
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
