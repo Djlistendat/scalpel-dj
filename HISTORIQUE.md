@@ -1,13 +1,29 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **34 versions publiées** en 11 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **35 versions publiées** en 11 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.33 — 14 novembre 2026
+
+- **Charger un son sans faire sauter l’autre platine** : Quand un son finissait de se charger pendant que l’autre
+  platine jouait, sa forme d’onde, sa vue d’ensemble, la liste de la bibliothèque et les suggestions se recalculaient
+  toutes dans la même image : la forme d’onde qui jouait sautait quelques images. Ce travail est maintenant étalé sur
+  plusieurs images, et la vue d’ensemble n’est plus calculée deux fois de suite.
+
+<details><summary>In English (November 14, 2026)</summary>
+
+- **Loading a track no longer makes the other deck skip**: When a track finished loading while the other deck was
+  playing, its waveform, its overview, the library list and the suggestions were all recomputed within the same frame,
+  and the playing waveform skipped a few frames. This work is now spread over several frames, and the overview is no
+  longer computed twice in a row.
+
+</details>
 
 ## 1.32 — 14 novembre 2026
 
