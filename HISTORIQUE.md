@@ -1,13 +1,53 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **33 versions publiées** en 10 jours, plus de 80 versions de
-travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29) ne sont jamais sorties seules : leurs nouveautés sont
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **34 versions publiées** en 11 jours, plus de 80 versions de
+travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.32 — 14 novembre 2026
+
+- **Potard MASTER dans la barre du haut** : Le volume du master se règle maintenant à l’écran, comme dans Serato : un
+  potard en haut à droite, à côté de la sortie audio. Glisse-le, ou utilise la molette ; double-clic : niveau normal.
+  Le réglage est gardé d’un lancement à l’autre.
+- **Forme d’onde et disque : un défilement régulier** : Les images sortaient bien à 60 par seconde, mais la position
+  dessinée tremblait d’une image à l’autre (jusqu’à plusieurs points) : la forme d’onde et le disque avançaient par
+  petits à-coups. Le dessin avance maintenant exactement du temps écoulé, et ne se recale sur le son que tout
+  doucement. Rien ne change pour le son, les calages ni les sauts.
+- **Forme d’onde nette en mouvement** : En défilant, les pics fins de l’onde réelle changeaient de hauteur à chaque
+  image, ce qui la faisait grésiller. Chaque colonne prend maintenant le creux et la crête de tout ce qu’elle couvre :
+  un pic garde sa hauteur où qu’il passe.
+- **Lecture fluide juste après un chargement** : Dans les secondes qui suivent le chargement d’un morceau dont les
+  stems sont déjà gardés, l’écran se figeait plusieurs fois un quart de seconde (forme d’onde et disque saccadés) : le
+  dessin des stems recalculait tout le morceau chaque fois qu’un stem finissait d’arriver. Chaque stem n’est plus
+  recalculé que là où il a changé.
+- **Table en bande : les potards tiennent dans l’écran** : Sur un écran de 1280 points de large, le potard TRIM de
+  gauche sortait de l’écran dès qu’un morceau avait ses stems (l’étiquette STEMS EQ élargit la voie). Les potards se
+  resserrent maintenant pour tenir, à la même distance du bord des deux côtés.
+
+<details><summary>In English (November 14, 2026)</summary>
+
+- **MASTER knob in the top bar**: Master volume can now be set on screen, as in Serato: a knob at the top right, next
+  to the audio output. Drag it or scroll; double-click: normal level. The setting is kept from one launch to the next.
+- **Waveform and platter: steady scrolling**: Frames did come out at 60 per second, but the drawn position jittered
+  from one frame to the next (by up to several points): the waveform and the platter moved in small jerks. The drawing
+  now advances by exactly the elapsed time, and only realigns with the sound very gently. Nothing changes for the
+  sound, syncing or jumps.
+- **Clean waveform in motion**: While scrolling, the thin peaks of the real waveform changed height on every frame,
+  which made it sizzle. Each column now takes the trough and crest of everything it covers: a peak keeps its height
+  wherever it passes.
+- **Smooth playback right after a load**: In the seconds after loading a track whose stems are already cached, the
+  screen froze several times for a quarter of a second (jerky waveform and platter): the stems drawing recomputed the
+  whole track each time a stem finished arriving. Each stem is now recomputed only where it changed.
+- **Mixer strip: the knobs fit on screen**: On a 1280-point-wide screen, the left TRIM knob went off screen as soon as
+  a track had its stems (the STEMS EQ label widens the channel). The knobs now tighten to fit, at the same distance
+  from the edge on both sides.
+
+</details>
 
 ## 1.30 — 13 novembre 2026
 
