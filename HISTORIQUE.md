@@ -1,13 +1,101 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **35 versions publiées** en 11 jours, plus de 80 versions de
-travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31) ne sont jamais sorties seules : leurs nouveautés sont
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **36 versions publiées** en 11 jours, plus de 80 versions de
+travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.38 BETA — 15 novembre 2026
+
+**Version BETA** : ses nouveautés n'ont pas encore été essayées en soirée ; la 1.33 reste téléchargeable.
+
+- **Intro Lab : plus de trous dans l’intro** : Une zone de 16 mesures pour une intro de 8 en donnait les 8 dernières,
+  que le bloc vert ne distinguait pas : sur un son, c’était la fin du morceau, sans batterie ni basse. L’intro prend
+  maintenant la zone depuis son début, et la zone ne peut plus être plus longue que l’intro (ou la sortie). La zone
+  proposée d’office évite les mesures où le beat s’arrête dans le morceau (un break, la fin) : parmi les passages du
+  refrain, le premier où la grosse caisse et la basse jouent du début à la fin. Si ta zone en contient quand même,
+  chacune prend le beat de la mesure de la zone qui a la même harmonie, et la voix garde ses mesures. Ces mesures sont
+  hachurées sur la forme d’onde du haut et soulignées dans l’arrangement ; « Avancé ▾ » permet de les garder telles
+  quelles.
+- **Logo plus grand dans le Dock** : Le disque du logo remplit maintenant toute l’icône (avant, 80 % de sa largeur,
+  comme la grille d’Apple ; celui de Serato en remplit 88 %). Posé par-dessus, le logo de Serato laisse voir un anneau
+  de celui de Scalpel DJ tout autour.
+- **Nouveau logo** : Le disque vinyle et le bistouri : dans la barre du haut, sur l’écran de démarrage, dans l’onglet,
+  dans le Dock pendant que l’app tourne et sur la page du téléphone.
+- **Mesures et sorties calées sur le vrai 1** : Sur une partie des sons (175 des 750 analysés par Serato 5, et des
+  sons analysés par Scalpel), le 1 de la mesure ne tombe pas sur un multiple de 4 depuis le début de la grille. Le
+  compte à rebours de phrase le savait, mais pas le reste : les sorties propres (écho, filtre, basses, roll, backspin)
+  pouvaient partir un à trois temps à côté du 1, et les traits épais des mesures, leurs numéros et la règle des
+  phrases étaient décalés d’autant, sur l’écran comme sur le téléphone. Tout se compte maintenant depuis le vrai 1,
+  comme le compte à rebours.
+- **Anti-larsen : un interrupteur, et rien sans micro** : L’anti-larsen ne tourne plus quand le micro est coupé
+  (avant, il écoutait la salle pendant tout le set dès que le micro l’entendait). Un interrupteur ANTI-LARSEN, en haut
+  de sa bulle (bouton à côté de l’état du micro) et dans l’onglet Micro du téléphone, l’arrête en entier : filtres de
+  la salle, direct, retour retiré du micro, porte, retenue. Arrêté, son bouton est barré.
+- **Platines et formes d’onde dessinées par Scalpel DJ, comme Serato** : Le haut de l’écran Mix (formes d’onde, vues
+  d’ensemble, disques, vu-mètres) ne passe plus par Chromium : Scalpel DJ le dessine lui-même avec la carte graphique
+  (Metal), à chaque rafraîchissement de l’écran, et le fait avancer d’après la position et la vitesse de chaque
+  platine. Quand la page est occupée (un son qui se charge), l’écran continue d’avancer au lieu de geler. Filmé de
+  l’écran sur batterie, la page bloquée 150 ms quatre fois de suite pendant la lecture : avant, l’écran gelait à
+  chaque fois (8 à 11 trous par film) ; maintenant, 0 à 1. Même image au pixel près. Réglages → Affichage → Dessin
+  natif pour revenir à l’ancien dessin.
+- **Lecture : moins d’images sautées au démarrage** : Filmé de l’écran (le même test sur Serato) : sur batterie,
+  l’écran ratait 4 à 6 images dans la seconde qui suit l’appui sur lecture. Deux causes, réglées : le canevas des
+  formes d’onde ne se redessinait plus à l’arrêt, et l’affichage mettait du temps à repartir (il se redessine
+  maintenant dans les 10 secondes qui suivent un geste à la souris, au clavier ou sur la table, sans rien coûter au
+  repos) ; et les fondus de la platine à l’antenne obligeaient à repeindre une partie de l’écran à leur fin. Mesuré :
+  1 à 2 images au lieu de 4 à 6.
+- **Chargement : le son décodé reste dans le moteur** : Quand tu chargeais un morceau, son décodé passait par l’écran
+  (la page) avant de revenir au moteur, puis une seconde fois pour le calcul des stems : plus de 250 Mo de tableaux
+  par morceau, qui faisaient sauter des images à la platine qui jouait. Le son décodé reste maintenant dans le moteur
+  : la platine le prend sur place, l’analyse le lit sur place, et le calcul des stems lit le fichier lui-même. Mêmes
+  analyses et même son, au bit près.
+
+<details><summary>In English (November 15, 2026)</summary>
+
+**BETA version**: not tried at a gig yet; 1.33 is still available.
+
+- **Intro Lab: no more gaps in the intro**: A 16-bar zone for an 8-bar intro used its last 8 bars, which the green
+  block didn’t single out: on one track, that was the end of the song, with no drums or bass. The intro now takes the
+  zone from its start, and the zone can no longer be longer than the intro (or the outro). The zone suggested by
+  default avoids bars where the beat stops in the track (a break, the ending): among the chorus passages, the first
+  one where the kick and the bass play from start to end. If your zone still has some, each one takes the beat of the
+  zone bar with the same harmony, and the vocals keep their own bars. These bars are hatched on the top waveform and
+  underlined in the arrangement; “Advanced ▾” lets you keep them as they are.
+- **Bigger logo in the Dock**: The logo’s record now fills the whole icon (before, 80% of its width, like Apple’s
+  grid; Serato’s fills 88%). Placed on top, Serato’s logo leaves a ring of the Scalpel DJ logo showing all around.
+- **New logo**: The vinyl record and scalpel: in the top bar, on the start screen, in the tab, in the Dock while the
+  app runs, and on the phone page.
+- **Bars and exits locked to the real downbeat**: On some tracks (175 of the 750 analyzed by Serato 5, plus tracks
+  analyzed by Scalpel), the 1 of the bar is not a multiple of 4 from the start of the grid. The phrase countdown knew
+  it, but nothing else did: clean exits (echo, filter, bass, roll, backspin) could start one to three beats off the 1,
+  and the bold bar lines, their numbers and the phrase ruler were off by the same amount, on screen and on the phone.
+  Everything now counts from the real 1, like the countdown.
+- **Anti-feedback: an on/off switch, and nothing without the mic**: Anti-feedback no longer runs while the mic is off
+  (before, it listened to the room for the whole set as soon as the mic heard it). An ANTI-FEEDBACK switch, at the top
+  of its bubble (the button next to the mic status) and in the phone’s Mic tab, turns it off entirely: room filters,
+  live, music removed from the mic, gate, per-band limiter. When off, its button is struck through.
+- **Decks and waveforms drawn by Scalpel DJ itself, like Serato**: The top of the Mix screen (waveforms, overviews,
+  platters, meters) no longer goes through Chromium: Scalpel DJ draws it itself with the graphics card (Metal), at
+  every screen refresh, and moves it on from each deck’s position and speed. When the page is busy (a track loading),
+  the screen keeps moving instead of freezing. Filmed from the screen on battery, with the page blocked for 150 ms
+  four times in a row during playback: before, the screen froze every time (8 to 11 gaps per film); now, 0 to 1. Same
+  image to the pixel. Settings → Display → Native drawing to go back to the old drawing.
+- **Playback: fewer skipped frames when starting**: Filmed from the screen (same test run on Serato): on battery, the
+  screen skipped 4 to 6 frames in the second after pressing play. Two causes, fixed: the waveform canvas stopped
+  redrawing while stopped and the display took time to restart (it now keeps redrawing for 10 seconds after a mouse,
+  keyboard or controller gesture, at no cost when idle); and the on-air deck fades forced part of the screen to be
+  repainted when they ended. Measured: 1 to 2 frames instead of 4 to 6.
+- **Loading: decoded audio stays in the engine**: When you loaded a track, its decoded audio went through the screen
+  (the page) before coming back to the engine, then a second time for the stems: over 250 MB of arrays per track,
+  which made the playing deck skip frames. Decoded audio now stays in the engine: the deck takes it in place, the
+  analysis reads it in place, and the stems process reads the file itself. Same analyses and same sound, bit for bit.
+
+</details>
 
 ## 1.33 — 14 novembre 2026
 
