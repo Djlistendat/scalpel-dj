@@ -1,13 +1,48 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **36 versions publiées** en 11 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **37 versions publiées** en 12 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.39 BETA — 16 novembre 2026
+
+**Version BETA**, comme la 1.38 : pas encore essayée en soirée ; la 1.33 reste téléchargeable.
+
+- **Clic droit sur plusieurs sons, comme Serato 5** : Le clic droit sur une sélection ouvre le menu de Serato 5, dans
+  son ordre, pour tous les sons choisis : Ajouter à, Analyser, Grille, Changer le BPM, Note en émoji, Couleur du son,
+  Montrer dans les crates (un son à la fois, comme dans Serato), Verrouiller et Déverrouiller la grille, Relire les
+  infos du fichier, Retrouver, Montrer dans le Finder (tous sélectionnés), Supprimer. Puis « Modifier… » (tags,
+  langue, riddim, énergie, ce qu’ouvrait le clic droit avant) et la marque « joué ce soir ». Les grilles verrouillées
+  ne changent pas. « Retrouver » (Relocate) est aussi dans le menu d’un son.
+- **Plus de fenêtre cachée sous les platines** : Les platines, la table et les formes d’onde sont dessinées par une
+  surface posée par-dessus la page. Si elle ne recevait plus les images de la page, elle gardait sa dernière image, et
+  une fenêtre ouverte (comme « Modifier » sur plusieurs sons) passait dessous. Maintenant, une image qu’elle n’a pas
+  pu montrer est refaite à l’image suivante ; si l’écran ne donne plus de rafraîchissement, elle est montrée quand
+  même ; une erreur pendant le dessin refait la surface au lieu de la figer ; et à chaque fenêtre ou menu ouvert,
+  Scalpel vérifie qu’elle l’a bien montré, sinon il la cache tant que la fenêtre reste ouverte.
+
+<details><summary>In English (November 16, 2026)</summary>
+
+**BETA version**, like 1.38: not tried at a gig yet; 1.33 is still available.
+
+- **Right-click on several tracks, like Serato 5**: Right-clicking a selection opens Serato 5’s menu, in its order,
+  for all selected tracks: Add to, Analyze, Beatgrid, Change BPM, Rating emoji, Track colour, Show in crates (one
+  track at a time, as in Serato), Lock and Unlock beatgrid, Re-scan file info, Relocate, Show in Finder (all
+  selected), Delete. Then “Edit…” (tags, language, riddim, energy, what right-click opened before) and the “played
+  tonight” mark. Locked beatgrids don’t change. “Relocate” is also in a single track’s menu.
+- **No more window hidden under the decks**: The decks, the mixer and the waveforms are drawn by a surface placed over
+  the page. If it stopped receiving the page’s images, it kept its last image, and an open window (like “Edit” on
+  several tracks) went underneath. Now an image it could not show is redrawn at the next frame; if the screen stops
+  refreshing, it is shown anyway; an error while drawing rebuilds the surface instead of freezing it; and for each
+  window or menu that opens, Scalpel checks the surface showed it, otherwise it hides the surface while the window
+  stays open.
+
+</details>
 
 ## 1.38 BETA — 15 novembre 2026
 
