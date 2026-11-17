@@ -1,13 +1,131 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **37 versions publiées** en 12 jours, plus de 80 versions de
-travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37) ne sont jamais sorties seules : leurs nouveautés sont
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **38 versions publiées** en 12 jours, plus de 80 versions de
+travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.43 BETA — 16 novembre 2026
+
+**Version BETA**, comme les 1.38 et 1.39 : pas encore essayée en soirée, et le matériel repris de Mixxx n'a pas encore
+été essayé sur les vraies tables ; les versions d'avant restent téléchargeables.
+
+- **Le son continue si l’écran plante** : Le moteur audio ne vit plus dans le même processus que l’écran. Si l’écran
+  plante, sature ou se recharge, le son ne s’arrête plus : les platines continuent de jouer, le scratch au jog aussi.
+  L’écran revient tout seul (de quelques secondes à une vingtaine avec une grosse bibliothèque) et reprend tes
+  platines là où elles en sont, sans un clic et sans rien couper. Essai : écran tué en pleine lecture, aucun
+  échantillon perdu ni décalé.
+- **L’enregistrement du mix continue aussi** : L’enregistrement est maintenant écrit par le moteur, plus par l’écran.
+  Si l’écran plante pendant REC, les morceaux continuent de s’écrire sur le disque et l’écran revenu retrouve
+  l’enregistrement en cours. Essai : écran tué pendant l’enregistrement, fichier final sans trou ni saut.
+- **SYNC et glissement de tempo tenus par le moteur** : Le suivi du SYNC et le glissement de tempo sont calculés dans
+  le moteur, à chaque tour du son. Avant, l’écran corrigeait 10 fois par seconde : s’il se figeait, la correction
+  s’arrêtait. Essai : écran figé 3 s après un décalage de 19 ms entre les platines, écart déjà corrigé au réveil (19
+  ms restants avant).
+- **Un filet sous le fil audio** : Une erreur interne dans le calcul du son fermait toute l’app d’un coup. Elle est
+  maintenant rattrapée : un instant de silence au pire, puis le son reprend.
+- **Au retour de l’écran, rien ne bouge dans le son** : Quand l’écran revient après un plantage, il reprend aussi ce
+  qui sonnait : un stem coupé reste coupé (les stems ne sont pas renvoyés au moteur), un effet allumé reste allumé, le
+  micro reste ouvert. Et si c’est le moteur audio lui-même qui tombe, Scalpel DJ le relance et reprend ton set tout
+  seul, sans fenêtre à cliquer. Essais : écran tué avec les quatre stems coupés, un effet et le micro allumés ; moteur
+  tué en pleine lecture.
+- **La table et les boutons des platines ne se redessinent plus** : Les potards de la table gardent leur mode (Stems
+  ou EQ) d’un morceau à l’autre : avant, chaque chargement les remettait en EQ, puis les repassait en Stems avec leurs
+  couleurs quelques secondes plus tard. Les boutons des platines restent dessinés tant que leur nouvelle image n’est
+  pas à l’écran (ils pouvaient manquer un instant), et l’écran de démarrage n’est plus recouvert par l’image d’avant.
+- **Traktor Kontrol S2 MK2 et S4 MK2 en USB** : Ces deux tables ne parlent pas en MIDI : Scalpel DJ lit maintenant
+  leurs messages USB directement, d’après le mapping libre de Mixxx (octets et bits relus dans son texte, sans faire
+  tourner ses scripts). PLAY, CUE, SYNC, SHIFT, jog (1 024 pas par tour), fader de tempo, faders, EQ, filtre et appui
+  de la molette sur la S4, crossfader, molette de navigation, LOAD, quatre hot cues par platine, boucle IN et OUT,
+  SLIP, CUE du casque. Branchée seule, elle devient ta table ; à côté d’une autre, elle sert d’appoint. Ses voyants
+  restent éteints : Scalpel DJ ne lui envoie rien pour l’instant. Les autres tables USB hors MIDI de Mixxx ne sont pas
+  reprises : chaque Traktor a sa propre forme de messages (S2 MK3, S3, Z1, F1, MX2 : lus, pas branchés), et les
+  anciennes Hercules et la S4 MK3 ne sont pas lisibles sans faire tourner leurs scripts. Jamais essayé sur une vraie
+  table.
+- **Fader de tempo : le sens de chaque table, d’après Mixxx** : Le fader de tempo n’envoie pas ses valeurs dans le
+  même sens d’une marque à l’autre. Pour chaque table reprise de Mixxx, Scalpel DJ suit ce que dit son mapping : la
+  valeur telle quelle pour celles qui envoient comme une Pioneer, inversée pour les autres. Si le fader d’une table va
+  quand même à l’envers : Réglages → Contrôleur → Sens du fader de tempo. Rien de tout cela n’a été essayé sur les
+  vraies tables.
+- **Lecteurs seuls, tables de mixage et appareils d’appoint repris de Mixxx** : Six lecteurs seuls (Pioneer CDJ-350,
+  Gemini CDMP-7000, American Audio Radius 2000, Denon DN-HS5500 et DN-SC2000, DJ-Tech CDJ-101) pilotent chacun une
+  platine, comme les CDJ. Quatre tables de mixage seules (DJ-Tech DJM-101 et Mixer One, Behringer CMD MM-1, Numark
+  Scratch). Et 25 appareils d’appoint (Korg nanoKONTROL et nanoPAD2, Akai LPD8 et MPD24, Novation Dicer, MIDI Fighter
+  Twister et Spectra, Arturia KeyLab, QuNeo…) : branché à côté de ta table, un appareil d’appoint ajoute ses commandes
+  aux siennes ; un message le dit, avec un bouton pour ne pas l’utiliser. Un clavier MIDI ordinaire n’est jamais pris
+  tout seul : il se choisit dans Réglages → Contrôleur. Rien de tout cela n’a été essayé sur le vrai matériel.
+- **Plus de 100 appareils repris de Mixxx** : Les DJ qui se servent de Mixxx, le logiciel libre, ont écrit pour leur
+  matériel quel message MIDI envoie chaque bouton. Scalpel DJ reprend ces adresses (pas leur code, et sans jamais
+  faire tourner leurs scripts : leur texte est seulement lu) pour 120 appareils, dont 85 tables à deux platines de
+  Hercules, Numark, Denon, Reloop, Pioneer DJ, Vestax, Behringer, MixVibes, Stanton, Roland, Korg, Ion et d’autres :
+  PLAY, CUE, SYNC, jog et son nombre de pas par tour, pitch, table, crossfader, navigation, LOAD, pads de hot cues,
+  boucles. Ils sont reconnus au nom de leur port ; sinon, Réglages → Contrôleur → Ta table permet de choisir, et donne
+  la liste de tout le matériel connu avec ce qui manque encore à chacun. Dix-sept mappings de Mixxx ne sont pas repris
+  : leurs commandes ne sont écrites que dans des scripts qu’il faudrait faire tourner (Novation Launchpad, Allen &
+  Heath Xone K2, Behringer BCR2000 et DDM4000, Stanton SCS…). Aucun de ces appareils n’a encore été essayé en vrai
+  dans Scalpel DJ.
+
+<details><summary>In English (November 16, 2026)</summary>
+
+**BETA version**, like 1.38 and 1.39: not tried at a gig yet, and the hardware taken from Mixxx hasn't been tried on
+the real controllers yet; earlier versions are still available.
+
+- **The sound keeps going if the screen crashes**: The audio engine no longer lives in the same process as the screen.
+  If the screen crashes, runs out of memory or reloads, the sound no longer stops: the decks keep playing, and so does
+  jog scratching. The screen comes back by itself (from a few seconds to about twenty with a large library) and picks
+  up your decks where they are, with no click and no cut. Test: screen killed during playback, not one sample lost or
+  shifted.
+- **The mix recording keeps going too**: The recording is now written by the engine, not by the screen. If the screen
+  crashes while REC is on, the chunks keep being written to disk and the screen finds the running recording when it
+  comes back. Test: screen killed during a recording, final file with no gap and no jump.
+- **SYNC and tempo glide held by the engine**: SYNC tracking and the tempo glide are computed inside the engine, on
+  every audio cycle. Before, the screen corrected 10 times a second: if it froze, the correction stopped. Test: screen
+  frozen for 3 s after a 19 ms offset between the decks, offset already corrected on wake-up (19 ms left before).
+- **A safety net under the audio thread**: An internal error in the sound computation used to close the whole app at
+  once. It is now caught: a moment of silence at worst, then the sound resumes.
+- **When the screen comes back, nothing changes in the sound**: When the screen comes back after a crash, it also
+  picks up what was sounding: a muted stem stays muted (stems are not sent to the engine again), an effect that was on
+  stays on, the mic stays open. And if the audio engine itself goes down, Scalpel DJ restarts it and resumes your set
+  on its own, with no dialog to click. Tests: screen killed with all four stems muted, an effect and the mic on;
+  engine killed during playback.
+- **The mixer and the deck buttons are no longer redrawn**: The mixer knobs keep their mode (Stems or EQ) from one
+  track to the next: before, every load put them back to EQ, then switched them to Stems with their colours a few
+  seconds later. Deck buttons stay drawn until their new image is on screen (they could be missing for a moment), and
+  the start screen is no longer covered by the previous image.
+- **Traktor Kontrol S2 MK2 and S4 MK2 over USB**: These two controllers do not speak MIDI: Scalpel DJ now reads their
+  USB messages directly, from the open Mixxx mapping (bytes and bits read in its text, without running its scripts).
+  PLAY, CUE, SYNC, SHIFT, jog (1,024 steps per turn), tempo fader, faders, EQ, filter and encoder press on the S4,
+  crossfader, browse encoder, LOAD, four hot cues per deck, loop IN and OUT, SLIP, headphone CUE. Plugged in alone, it
+  becomes your controller; next to another one, it works as an add-on. Its lights stay off: Scalpel DJ sends it
+  nothing for now. The other non-MIDI USB controllers from Mixxx are not taken: each Traktor has its own message
+  layout (S2 MK3, S3, Z1, F1, MX2: read, not wired in), and the older Hercules and the S4 MK3 cannot be read without
+  running their scripts. Never tried on a real controller.
+- **Tempo fader: each controller’s direction, from Mixxx**: A tempo fader does not send its values the same way round
+  from one brand to another. For each controller taken from Mixxx, Scalpel DJ follows what its mapping says: the value
+  as it is for those that send like a Pioneer, inverted for the others. If a controller’s fader still runs backwards:
+  Settings → Controller → Tempo fader direction. None of this has been tried on the real controllers.
+- **Standalone players, mixers and add-on devices taken from Mixxx**: Six standalone players (Pioneer CDJ-350, Gemini
+  CDMP-7000, American Audio Radius 2000, Denon DN-HS5500 and DN-SC2000, DJ-Tech CDJ-101) each drive one deck, like the
+  CDJs. Four standalone mixers (DJ-Tech DJM-101 and Mixer One, Behringer CMD MM-1, Numark Scratch). And 25 add-on
+  devices (Korg nanoKONTROL and nanoPAD2, Akai LPD8 and MPD24, Novation Dicer, MIDI Fighter Twister and Spectra,
+  Arturia KeyLab, QuNeo…): plugged in next to your controller, an add-on device adds its controls to it; a message
+  says so, with a button not to use it. An ordinary MIDI keyboard is never picked up on its own: choose it in Settings
+  → Controller. None of this has been tried on the real hardware.
+- **More than 100 devices taken from Mixxx**: DJs who use Mixxx, the open-source software, have written down which
+  MIDI message each button of their gear sends. Scalpel DJ takes those addresses (not their code, and without ever
+  running their scripts: their text is only read) for 120 devices, including 85 two-deck controllers from Hercules,
+  Numark, Denon, Reloop, Pioneer DJ, Vestax, Behringer, MixVibes, Stanton, Roland, Korg, Ion and others: PLAY, CUE,
+  SYNC, jog and its steps per turn, pitch, mixer, crossfader, browsing, LOAD, hot cue pads, loops. They are recognised
+  by their port name; otherwise, Settings → Controller → Your controller lets you choose, and lists all known hardware
+  with what each still lacks. Seventeen Mixxx mappings are not taken: their controls are only written in scripts that
+  would have to be run (Novation Launchpad, Allen & Heath Xone K2, Behringer BCR2000 and DDM4000, Stanton SCS…). None
+  of these devices has been tried for real in Scalpel DJ yet.
+
+</details>
 
 ## 1.39 BETA — 16 novembre 2026
 
