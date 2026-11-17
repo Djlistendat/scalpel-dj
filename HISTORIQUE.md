@@ -22,6 +22,16 @@ dans la version suivante.
   Le panneau Micro ouvert ne fait plus passer le casque en mode téléphone : son micro ne s’ouvre que quand la voix est
   allumée. Et les haut-parleurs du Mac restent dans la liste des sorties quand un casque Bluetooth est branché : tu
   peux parler dans le micro du casque et sortir sur le Mac.
+- **Une sortie qui ne répond pas ne bloque plus tout** : Un casque Bluetooth ou une carte son peut rester dans la
+  liste du Mac sans plus recevoir aucun son. Scalpel DJ restait alors muet et figé, sans rien dire, et un chargement
+  restait bloqué à « analyse ». Maintenant il s’en aperçoit en une seconde et demie, rouvre la sortie une fois, puis
+  passe sur celle du Mac et te le dit, avec un bouton Réessayer. La sortie mise de côté est marquée dans Réglages →
+  Sortie audio et dans la check-list ; elle est reprise toute seule si tu la rebranches.
+- **Vertical : platines complètes et table dès le premier lancement** : En Vertical, sur un écran de MacBook, un
+  nouvel utilisateur avait des platines repliées, sans disque, la table effacée et un vide sous les pads. Maintenant
+  la bibliothèque garde au moins la moitié de la hauteur et, dans cette limite, tout se montre : platines complètes et
+  table. Quand la place manque, la table s’efface d’abord et les platines gardent leur disque ; elles ne se replient
+  qu’ensuite. Une hauteur de bibliothèque choisie à la poignée reste respectée.
 - **Rolls courts sur un casque Bluetooth** : Sur une sortie qui a beaucoup de retard (casque Bluetooth, haut-parleurs
   du Mac), les rolls de 1/16, 1/8 et 1/4 de temps ne faisaient rien : le moteur avait déjà dépassé la fin de la boucle
   au moment où elle était posée. La boucle est maintenant reprise au même endroit de son motif, pour les rolls et les
@@ -54,6 +64,16 @@ dans la version suivante.
   longer switches the headset to phone mode: its mic only opens when the voice is on. And the Mac’s speakers stay in
   the output list while a Bluetooth headset is connected: you can talk into the headset’s mic and play through the
   Mac.
+- **An output that stops responding no longer blocks everything**: Bluetooth headphones or a sound card can stay in
+  the Mac’s list while no longer receiving any sound. Scalpel DJ then stayed silent and frozen, saying nothing, and a
+  load stayed stuck on “analysis”. It now notices within a second and a half, reopens the output once, then moves to
+  the Mac’s own output and tells you, with a Try again button. The output set aside is marked in Settings → Audio
+  output and in the checklist; it is taken again by itself if you plug it back in.
+- **Vertical: full decks and mixer from the first launch**: In Vertical, on a MacBook screen, a new user got folded
+  decks with no platter, the mixer hidden and a gap under the pads. Now the library keeps at least half the height
+  and, within that limit, everything is shown: full decks and the mixer. When space runs short, the mixer hides first
+  and the decks keep their platter; they only fold after that. A library height set with the handle is still
+  respected.
 - **Short rolls on Bluetooth headphones**: On an output with a lot of delay (Bluetooth headphones, the Mac’s
   speakers), 1/16, 1/8 and 1/4 beat rolls did nothing: the engine was already past the end of the loop when it was
   set. The loop is now caught at the same place in its pattern, for rolls and auto loops.
