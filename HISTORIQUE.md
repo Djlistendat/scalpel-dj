@@ -23,6 +23,9 @@ dans la version suivante.
   cochée, et le clavier (flèches, Entrée, Échap, première lettre).
 - **Le même espace partout** : L’écart entre les platines, la table, les panneaux, la bibliothèque et les bords de la
   fenêtre est maintenant le même sur tous les onglets : 2 px, celui qu’il y avait déjà sous la barre du haut.
+- **Curseur de tempo de la vue Extended** : En Extended, le curseur de tempo n’occupait que la moitié de sa rangée et
+  n’avait qu’un trait au milieu. Il prend maintenant toute la rangée, avec les mêmes graduations et le même chapeau de
+  métal que le curseur debout des autres vues.
 
 <details><summary>In English (November 17, 2026)</summary>
 
@@ -35,6 +38,9 @@ dans la version suivante.
   the keyboard (arrows, Enter, Escape, first letter).
 - **The same spacing everywhere**: The gap between the decks, the mixer, the panels, the library and the window edges
   is now the same on every tab: 2 px, the one that was already under the top bar.
+- **Tempo slider in the Extended view**: In Extended, the tempo slider only used half of its row and had a single mark
+  in the middle. It now takes the whole row, with the same graduations and the same metal cap as the upright slider of
+  the other views.
 
 </details>
 
