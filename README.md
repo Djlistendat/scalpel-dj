@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**37 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**38 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.43 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.43)** (16 novembre 2026) : Le son continue si l’écran plante · L’enregistrement du mix continue aussi · SYNC et glissement de tempo tenus par le moteur · Un filet sous le fil audio · Au retour de l’écran, rien ne bouge dans le son · La table et les boutons des platines ne se redessinent plus · Traktor Kontrol S2 MK2 et S4 MK2 en USB · Fader de tempo : le sens de chaque table, d’après Mixxx · Lecteurs seuls, tables de mixage et appareils d’appoint repris de Mixxx · Plus de 100 appareils repris de Mixxx
 - **[1.39 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.39)** (16 novembre 2026) : Clic droit sur plusieurs sons, comme Serato 5 · Plus de fenêtre cachée sous les platines
 - **[1.38 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.38)** (15 novembre 2026) : Intro Lab : plus de trous dans l’intro · Logo plus grand dans le Dock · Nouveau logo · Mesures et sorties calées sur le vrai 1 · Anti-larsen : un interrupteur, et rien sans micro · Platines et formes d’onde dessinées par Scalpel DJ, comme Serato · Lecture : moins d’images sautées au démarrage · Chargement : le son décodé reste dans le moteur
 - **[1.33](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.33)** (14 novembre 2026) : Charger un son sans faire sauter l’autre platine
-- **[1.32](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.32)** (14 novembre 2026) : Potard MASTER dans la barre du haut · Forme d’onde et disque : un défilement régulier · Forme d’onde nette en mouvement · Lecture fluide juste après un chargement · Table en bande : les potards tiennent dans l’écran
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
