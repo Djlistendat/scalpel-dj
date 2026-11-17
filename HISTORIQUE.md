@@ -1,13 +1,65 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **39 versions publiées** en 13 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **40 versions publiées** en 13 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.45 BETA — 17 novembre 2026
+
+**Version BETA**, comme la 1.44 : pas encore essayée en soirée ; les versions d'avant restent téléchargeables.
+
+- **Une grille de Serato fausse n’est plus suivie** : Quand l’ancienne grille de Serato d’un son ne tombe pas sur ses
+  temps (un son à 125 BPM rangé à 93,75 dans Serato, par exemple), les traits glissaient entre les coups et le SYNC
+  calait à côté. Scalpel DJ le voit maintenant au chargement, prend la grille qu’il a mesurée sur le son et te le dit,
+  avec un bouton pour garder celle de Serato. Les sons dont la grille de Serato est juste ne changent pas.
+- **Longue session : plus de craquements** : Dans une longue session, le son craquait par moments quand on chargeait
+  un morceau pendant que les stems d’un autre se calculaient. Cause trouvée : le fil qui fabrique le son attendait que
+  macOS lui rende un bout de mémoire qu’il venait de lui reprendre. Toute la mémoire dont le son a besoin est
+  maintenant gardée en mémoire vive, pas seulement les morceaux. Mesuré sur la même session de 6 minutes : 22 à 39
+  retards du son avant, aucun après.
+- **L’écran ne se fige plus toutes les une à deux minutes** : Pendant le calcul des stems, le point de l’onglet STEMS
+  qui pulse remplissait peu à peu la réserve d’images de l’écran ; une fois pleine, tout l’écran était repeint d’un
+  coup : un quart de seconde figé, toutes les une à deux minutes. Ce point ne prend plus de place, et une réserve
+  pleine se renouvelle maintenant sans rien figer. La mise en cache des stems d’un morceau (quatre blocages d’un quart
+  de seconde) est aussi découpée en petits morceaux.
+- **Chargement d’un morceau deux fois plus rapide** : Un morceau qui a la grille de Serato, ou que Scalpel DJ a déjà
+  analysé, ne refait plus le calcul de sa grille à chaque chargement. Mesuré : de 1,2 à 1,4 s avant, 0,3 à 0,8 s
+  maintenant, avec la même grille, le même tempo et la même tonalité.
+- **Changer de langue deux fois de suite** : Passer en anglais puis revenir au français (ou l’inverse) ramenait
+  l’écran de démarrage, platines vides. Les platines reviennent maintenant à chaque fois.
+- **Une date ouverte dans la bibliothèque se voit** : « Voir dans la bibliothèque », dans Bookings, changeait la liste
+  sans rien dire. La date a maintenant sa section en haut des crates, avec son jour, son nom, sa préparation et ses
+  crates, et une flèche pour revenir à Bookings.
+
+<details><summary>In English (November 17, 2026)</summary>
+
+- **A wrong Serato beatgrid is no longer followed**: When a track’s old Serato beatgrid does not land on its beats (a
+  125 BPM track stored as 93.75 in Serato, for instance), the grid lines drifted between the hits and SYNC locked off
+  the beat. Scalpel DJ now sees it when the track loads, uses the grid it measured on the sound and tells you, with a
+  button to keep Serato’s. Tracks whose Serato grid is right do not change.
+- **Long sessions: no more crackles**: In a long session, the sound crackled now and then when you loaded a track
+  while another track’s stems were still being computed. Cause found: the thread that makes the sound was waiting for
+  macOS to give back a piece of memory it had just taken away. All the memory the sound needs is now kept in RAM, not
+  only the tracks. Measured on the same 6-minute session: 22 to 39 late audio callbacks before, none after.
+- **The screen no longer freezes every minute or two**: While stems were being computed, the pulsing dot on the STEMS
+  tab slowly filled the screen’s image store; once full, the whole screen was repainted at once: a quarter of a second
+  frozen, every minute or two. That dot no longer takes any room, and a full store now renews itself without freezing
+  anything. Saving a track’s stems to the cache (four quarter-second stalls) is also split into small pieces.
+- **Loading a track is twice as fast**: A track that has Serato’s beatgrid, or that Scalpel DJ has already analysed,
+  no longer recomputes its grid on every load. Measured: 1.2 to 1.4 s before, 0.3 to 0.8 s now, with the same grid,
+  tempo and key.
+- **Changing language twice in a row**: Switching to English and then back to French (or the other way round) brought
+  back the start screen with empty decks. The decks now come back every time.
+- **A date opened in the library now shows**: “Show in the library”, in Bookings, changed the list without saying so.
+  The date now has its own section above the crates, with its day, name, set preparation and crates, and an arrow back
+  to Bookings.
+
+</details>
 
 ## 1.44 BETA — 17 novembre 2026
 
