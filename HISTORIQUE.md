@@ -1,13 +1,76 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **38 versions publiées** en 12 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **39 versions publiées** en 13 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.44 BETA — 17 novembre 2026
+
+**Version BETA**, comme la 1.43 : pas encore essayée en soirée ; les versions d'avant restent téléchargeables.
+
+- **Casques et enceintes Bluetooth** : Un casque Bluetooth qui a aussi un micro était refusé comme sortie : pour
+  macOS, c’est deux cartes son du même nom, son micro puis sa sortie, et Scalpel DJ prenait la première. Il prend
+  maintenant celle qui a des sorties. Le son y part à la fréquence du casque, et les formes d’onde tiennent compte de
+  son retard (environ 190 ms : bien pour écouter ou préparer, trop pour scratcher). Tu peux aussi prendre son micro
+  pour la voix : le casque passe alors en mode téléphone (une voie à 16 kHz, c’est le Bluetooth qui l’impose) et
+  Scalpel DJ le suit, quand le micro s’ouvre comme quand il se ferme, avec un quart de seconde de silence au passage.
+  Le panneau Micro ouvert ne fait plus passer le casque en mode téléphone : son micro ne s’ouvre que quand la voix est
+  allumée. Et les haut-parleurs du Mac restent dans la liste des sorties quand un casque Bluetooth est branché : tu
+  peux parler dans le micro du casque et sortir sur le Mac.
+- **Rolls courts sur un casque Bluetooth** : Sur une sortie qui a beaucoup de retard (casque Bluetooth, haut-parleurs
+  du Mac), les rolls de 1/16, 1/8 et 1/4 de temps ne faisaient rien : le moteur avait déjà dépassé la fin de la boucle
+  au moment où elle était posée. La boucle est maintenant reprise au même endroit de son motif, pour les rolls et les
+  boucles automatiques.
+- **Micro sur une autre carte que la sortie : moins de retard** : Quand le micro et la sortie ne sont pas la même
+  carte son (micro du Mac ou d’un casque, sortie ailleurs), la voix attendait dans une file plus longue que
+  nécessaire. Elle y passe maintenant environ 2 ms de moins. Le micro d’une table (même carte que la sortie) n’est pas
+  concerné : il n’a pas de file.
+- **Le téléphone au dessin de l’app** : La télécommande et le Studio du téléphone reprennent le dessin de l’app du Mac
+  : mêmes coins, mêmes pads, même logo, crossfader plus gros et strié. Les formes d’onde du téléphone sont celles du
+  Mac : l’onde réelle, aux couleurs de Serato.
+- **Potards, faders et crossfader en métal** : Les potards ont un chapeau en métal à bord moleté, les faders et le
+  crossfader un capuchon strié sur un rail creusé, le crossfader est plus gros. Sur les platines, les petits boutons
+  sont réunis en plaques, SYNC, CUE et PLAY ont du relief, le disque et le transport forment un bloc, et le nom d’un
+  pad s’écrit en entier au lieu d’être coupé. Rien de plus à calculer pendant la lecture.
+- **Image écrasée après un changement de taille de la fenêtre** : En sortant du plein écran ou en changeant la taille
+  de la fenêtre, les platines pouvaient s’afficher écrasées, textes élargis. La surface de dessin prend maintenant sa
+  nouvelle taille tout de suite.
+
+<details><summary>In English (November 17, 2026)</summary>
+
+**BETA version**, like 1.43: not yet tried at a gig; earlier versions can still be downloaded.
+
+- **Bluetooth headphones and speakers**: A Bluetooth headset that also has a mic was refused as an output: for macOS
+  it is two sound cards with the same name, its mic then its output, and Scalpel DJ picked the first one. It now picks
+  the one that has outputs. Sound goes out at the headset’s own sample rate, and the waveforms account for its delay
+  (about 190 ms: fine for listening or prepping, too much for scratching). You can also use its mic for the voice: the
+  headset then switches to phone mode (one channel at 16 kHz, which Bluetooth imposes) and Scalpel DJ follows it, when
+  the mic opens and when it closes, with a quarter of a second of silence at the switch. Opening the Mic panel no
+  longer switches the headset to phone mode: its mic only opens when the voice is on. And the Mac’s speakers stay in
+  the output list while a Bluetooth headset is connected: you can talk into the headset’s mic and play through the
+  Mac.
+- **Short rolls on Bluetooth headphones**: On an output with a lot of delay (Bluetooth headphones, the Mac’s
+  speakers), 1/16, 1/8 and 1/4 beat rolls did nothing: the engine was already past the end of the loop when it was
+  set. The loop is now caught at the same place in its pattern, for rolls and auto loops.
+- **Mic on a different card than the output: less delay**: When the mic and the output are not the same sound card
+  (the Mac’s or a headset’s mic, output elsewhere), the voice waited in a longer queue than needed. It now spends
+  about 2 ms less there. A mixer’s mic (same card as the output) is not affected: it has no queue.
+- **The phone gets the app’s look**: The phone remote and Studio now use the Mac app’s design: same corners, same
+  pads, same logo, a bigger ridged crossfader. The phone’s waveforms are the Mac’s: the real wave, in Serato’s
+  colours.
+- **Metal knobs, faders and crossfader**: Knobs have a metal cap with a knurled edge, faders and the crossfader a
+  ridged cap on a recessed rail, and the crossfader is bigger. On the decks, small buttons are grouped into plates,
+  SYNC, CUE and PLAY have relief, the platter and transport form one block, and a pad’s name is written in full
+  instead of being cut. Nothing more to compute during playback.
+- **Squashed image after resizing the window**: When leaving full screen or resizing the window, the decks could be
+  drawn squashed, with widened text. The drawing surface now takes its new size right away.
+
+</details>
 
 ## 1.43 BETA — 16 novembre 2026
 
