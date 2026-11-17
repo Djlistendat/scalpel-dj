@@ -1,13 +1,42 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **40 versions publiées** en 13 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **41 versions publiées** en 13 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.46 BETA — 17 novembre 2026
+
+**Version BETA**, comme la 1.45 : pas encore essayée en soirée ; les versions d'avant restent téléchargeables.
+
+- **Moins de couleurs criardes** : Les pads de stems, les emplacements du sampler et l’onglet de pads choisi faisaient
+  « jouet » : de gros aplats de couleurs vives côte à côte. Un stem entendu est maintenant un pad sombre, avec une
+  barre et son nom dans sa couleur ; coupé, il est gris. Un emplacement du sampler est une plaque neutre avec une
+  barre de couleur, et ne prend son cadre de couleur que pendant qu’il joue. L’onglet choisi reste rempli, en plus
+  dense.
+- **Menus déroulants aux couleurs de l’app** : Les listes déroulantes ouvraient le menu gris clair de macOS, qui
+  jurait avec le reste. Elles ouvrent maintenant un menu sombre de l’app, avec des groupes titrés, la ligne choisie
+  cochée, et le clavier (flèches, Entrée, Échap, première lettre).
+- **Le même espace partout** : L’écart entre les platines, la table, les panneaux, la bibliothèque et les bords de la
+  fenêtre est maintenant le même sur tous les onglets : 2 px, celui qu’il y avait déjà sous la barre du haut.
+
+<details><summary>In English (November 17, 2026)</summary>
+
+- **Fewer garish colours**: The stem pads, the sampler slots and the selected pad tab looked like a toy: big blocks of
+  bright colours side by side. A stem you hear is now a dark pad with a bar and its name in its colour; muted, it is
+  grey. A sampler slot is a neutral plate with a colour bar, and only gets its coloured frame while it plays. The
+  selected tab stays filled, in a denser shade.
+- **Dropdown menus in the app’s colours**: Dropdown lists used to open the light grey macOS menu, which clashed with
+  everything else. They now open a dark menu in the app’s style, with titled groups, a tick on the chosen line, and
+  the keyboard (arrows, Enter, Escape, first letter).
+- **The same spacing everywhere**: The gap between the decks, the mixer, the panels, the library and the window edges
+  is now the same on every tab: 2 px, the one that was already under the top bar.
+
+</details>
 
 ## 1.45 BETA — 17 novembre 2026
 
