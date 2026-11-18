@@ -1,13 +1,73 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **41 versions publiées** en 13 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **42 versions publiées** en 13 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.47 BETA — 17 novembre 2026
+
+**Version BETA**, comme la 1.46 : pas encore essayée en soirée ; les versions d'avant restent téléchargeables.
+
+- **XDJ-RX3 : la molette BROWSE reste où tu as cliqué** : La molette de la table repartait dans les crates après un
+  clic sur un morceau ou un chargement. Elle suit maintenant le volet cliqué en dernier (crates ou liste), comme dans
+  Serato, et reste sur la liste après un chargement.
+- **XDJ-RX3 : HOT CUE, LOOPS, SAMPLER, STEMS sur les boutons de mode** : Les quatre boutons de mode de la table
+  donnent maintenant HOT CUE, LOOPS (BEAT LOOP), SAMPLER (SLIP LOOP) et STEMS (BEAT JUMP), les modes dont on se sert :
+  Scalpel DJ n’a ni BEAT LOOP ni BEAT JUMP en pads. Avec SHIFT, EXTENSION1 donne ROLL et EXTENSION2 les sorties.
+- **XDJ-RX3 : les SOUND COLOR FX** : Les six touches SOUND COLOR FX de la table choisissent l’effet du potard COLOR
+  des deux voies : SPACE (réverbération), DUB ECHO (écho d’un demi-temps qui continue), SWEEP (passe-bande à droite,
+  porte qui resserre le son à gauche), NOISE (bruit filtré), CRUSH (son écrasé), FILTER. Au milieu du potard, rien ;
+  PARAMETER règle la nuance. La touche allumée, appuyée de nouveau, l’éteint : COLOR redevient le filtre.
+- **XDJ-RX3 : sélecteur d’effet et MASTER CUE** : Le sélecteur BEAT FX de la table choisit maintenant l’effet de
+  Scalpel DJ du même nom (DELAY, ECHO, PING PONG, SPIRAL, REVERB, TRANS, FILTER, FLANGER, PHASER, SLIP ROLL, ROLL,
+  VINYL BRAKE ; PITCH et HELIX n’ont pas d’équivalent). MASTER CUE met le master au casque. Ces commandes venaient
+  d’un relevé d’une vraie XDJ-RX3 et ne faisaient rien.
+- **Casque débranché : le son revient sur le Mac** : Un casque (Bluetooth ou jack) débranché laissait Scalpel DJ muet
+  : la sortie partie était réessayée en silence pendant 10 s, puis une « sortie de secours » ajoutée en 1.44 pouvait
+  mettre les haut-parleurs du Mac de côté pour toujours et envoyer le son vers une carte virtuelle qui ne sonne nulle
+  part. Ce mécanisme est retiré : le casque parti, le son repasse tout de suite sur la sortie du Mac, et revient sur
+  le casque quand il est rebranché.
+- **Choisir les haut-parleurs du Mac à la main** : Une carte que la liste interne ne voyait pas (les haut-parleurs du
+  Mac, casque Bluetooth branché) était refusée : corrigé, et le faux message « ne répond pas, le Mac n’a pas d’autre
+  sortie » ne paraît plus. L’app qui se fermait d’un coup en choisissant les haut-parleurs n’a pas pu être reproduite :
+  si cela arrive encore, l’app en garde maintenant la cause.
+- **Les préréglages d’Intro Lab gardent la mélodie** : Un préréglage enregistré garde maintenant aussi les variations
+  de mélodie de chaque mesure, avec leur instrument et l’option « mélodie d’origine dessous ». Un préréglage d’avant
+  ne change rien à la mélodie du son.
+
+<details><summary>In English (November 17, 2026)</summary>
+
+- **XDJ-RX3: the BROWSE knob stays where you clicked**: The deck’s browse knob jumped back to the crates after
+  clicking a track or loading one. It now follows the panel you clicked last (crates or tracks), like Serato, and
+  stays on the track list after a load.
+- **XDJ-RX3: HOT CUE, LOOPS, SAMPLER, STEMS on the mode buttons**: The deck’s four mode buttons now give HOT CUE,
+  LOOPS (BEAT LOOP), SAMPLER (SLIP LOOP) and STEMS (BEAT JUMP), the modes DJs actually use: Scalpel DJ has no BEAT
+  LOOP or BEAT JUMP pad mode. With SHIFT, EXTENSION1 gives ROLL and EXTENSION2 the exits.
+- **XDJ-RX3: SOUND COLOR FX**: The deck’s six SOUND COLOR FX buttons pick the effect of both channels’ COLOR knob:
+  SPACE (reverb), DUB ECHO (a half-beat echo that keeps ringing), SWEEP (band-pass to the right, a gate that tightens
+  the sound to the left), NOISE (filtered noise), CRUSH (crushed sound), FILTER. Nothing at the knob’s center;
+  PARAMETER sets the shade. Pressing the lit button again turns it off: COLOR is the filter again.
+- **XDJ-RX3: effect selector and MASTER CUE**: The deck’s BEAT FX selector now picks the Scalpel DJ effect of the same
+  name (DELAY, ECHO, PING PONG, SPIRAL, REVERB, TRANS, FILTER, FLANGER, PHASER, SLIP ROLL, ROLL, VINYL BRAKE; PITCH
+  and HELIX have no equivalent). MASTER CUE puts the master in the headphones. These controls came from a log of a
+  real XDJ-RX3 and did nothing.
+- **Headphones unplugged: sound comes back on the Mac**: Unplugging headphones (Bluetooth or jack) left Scalpel DJ
+  silent: the missing output was retried silently for 10 s, then a 1.44 “fallback output” could set the Mac’s speakers
+  aside for good and send sound to a virtual device that plays nowhere. That mechanism is gone: once the headphones
+  leave, sound goes straight back to the Mac’s output, and back to the headphones when they are plugged in again.
+- **Choosing the Mac’s speakers by hand**: A device the internal list missed (the Mac’s speakers with Bluetooth
+  headphones connected) was refused: fixed, and the false “not responding, the Mac has no other output” message no
+  longer appears. The app suddenly closing when choosing the speakers could not be reproduced: if it happens again,
+  the app now keeps a record of the cause.
+- **Intro Lab presets keep the melody**: A saved preset now also keeps each bar’s melody variation, with its
+  instrument and the “keep the original melody underneath” option. An older preset leaves the track’s melody as it is.
+
+</details>
 
 ## 1.46 BETA — 17 novembre 2026
 
