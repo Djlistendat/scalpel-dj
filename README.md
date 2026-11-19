@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**42 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**43 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.48 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.48)** (19 novembre 2026) : Moins éblouissant · Couleurs en tons profonds
 - **[1.47 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.47)** (17 novembre 2026) : XDJ-RX3 : la molette BROWSE reste où tu as cliqué · XDJ-RX3 : HOT CUE, LOOPS, SAMPLER, STEMS sur les boutons de mode · XDJ-RX3 : les SOUND COLOR FX · XDJ-RX3 : sélecteur d’effet et MASTER CUE · Casque débranché : le son revient sur le Mac · Choisir les haut-parleurs du Mac à la main · Les préréglages d’Intro Lab gardent la mélodie
 - **[1.46 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.46)** (17 novembre 2026) : Moins de couleurs criardes · Menus déroulants aux couleurs de l’app · Le même espace partout · Curseur de tempo de la vue Extended
 - **[1.45 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.45)** (17 novembre 2026) : Une grille de Serato fausse n’est plus suivie · Longue session : plus de craquements · L’écran ne se fige plus toutes les une à deux minutes · Chargement d’un morceau deux fois plus rapide
-- **[1.44 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.44)** (17 novembre 2026) : Casques et enceintes Bluetooth · Une sortie qui ne répond pas ne bloque plus tout · Vertical : platines complètes et table dès le premier lancement · Rolls courts sur un casque Bluetooth · Micro sur une autre carte que la sortie : moins de retard · Le téléphone au dessin de l’app · Potards, faders et crossfader en métal · Image écrasée après un changement de taille de la fenêtre
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
