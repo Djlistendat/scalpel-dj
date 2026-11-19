@@ -1,13 +1,83 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **43 versions publiées** en 15 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **44 versions publiées** en 15 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.49 BETA — 19 novembre 2026
+
+**Version BETA**, comme la 1.48 : pas encore essayée en soirée ; les versions d'avant restent téléchargeables. Cette version
+s'occupe des DJ qui n'ont ni REV5 ni Serato : autres tables, autres logiciels.
+
+- **Le son sur ta table, quelle que soit sa marque** : La carte son de ta table s’ouvre toute seule dès qu’elle est
+  reconnue (Hercules, Numark, Traktor, Reloop, Denon…), plus seulement chez Pioneer. Avant, le son restait sur les
+  haut-parleurs du Mac.
+- **Une table inconnue n’est plus prise pour une REV5** : Une table que Scalpel DJ ne connaît pas recevait le plan
+  MIDI, les lumières et le jog de la REV5, et ses faders restaient fermés : aucun son. Elle garde maintenant son nom,
+  rien n’est fermé, et un message propose le relevé guidé. Une table d’une autre marque passe aussi avant un clavier
+  MIDI branché à côté.
+- **Les tables qui mixent elles-mêmes** : Rane Seventy et Seventy-Two, DJM-S3, A9, 900NXS2, Xone:96, Numark Scratch,
+  Reloop Elite, Denon X1850, Kontrol Z2 : chaque platine sur sa voie, comme les DJM-S. Avant, tout le mix arrivait sur
+  une seule voie.
+- **Jog d’une autre table : mesurer un tour** : Quand Scalpel DJ ne connaît pas les pas par tour du jog de ta table,
+  Réglages → Contrôleur propose de mesurer un tour, gardé pour ce modèle. Avant, elle recevait la valeur de la REV5 et
+  le scratch ne suivait pas la main.
+- **Tes playlists de rekordbox, Traktor et VirtualDJ** : Réglages → Bibliothèque → Depuis un autre logiciel : les
+  playlists de Traktor et les listes de VirtualDJ deviennent des crates, un export XML de rekordbox ou une playlist
+  M3U aussi, avec les hot cues, les boucles et la grille de chaque son (rekordbox, Traktor). Ce que tu as posé à la
+  main et ce qui vient de Serato passent toujours devant. Les dossiers des sons s’ouvrent s’il le faut. Au premier
+  lancement sans Serato, Scalpel DJ le propose tout seul. Rien n’est écrit dans ces logiciels.
+- **Aides de la REV5 seulement avec une REV5** : Les bulles et notes qui citaient les touches de la REV5 (« SHIFT +
+  1/2X sur la REV5 ») ne s’affichent plus à ceux qui ont une autre table ; avec une REV5, rien ne change.
+- **Table en USB seulement** : Une table qui ne parle qu’en USB (HID), pas en MIDI (Traktor Kontrol S4 MK3, X1…), est
+  maintenant signalée : avant, rien ne disait qu’elle était vue.
+- **Disque externe sans Serato** : Un disque branché sans bibliothèque Serato est maintenant proposé : un message
+  demande quel dossier de musique y lire.
+- **Autres tables : couleurs des pads, casque, DVS** : Les pads d’une table d’une autre marque s’allument sans
+  couleurs au hasard ; l’aide « casque muet » et la proposition du DVS marchent aussi avec elle. « Valeurs par défaut
+  » des couleurs remet la palette de ta table.
+- **Sans Serato aussi** : Une bibliothèque vide dit maintenant comment ajouter ta musique, avec un bouton pour choisir
+  un dossier, même si ton dossier Musique ne contient rien. L’écran de démarrage ne promet plus Serato à ceux qui ne
+  l’ont pas.
+
+<details><summary>In English (November 19, 2026)</summary>
+
+- **Sound on your controller, whatever the brand**: Your controller’s sound card now opens on its own as soon as the
+  controller is recognised (Hercules, Numark, Traktor, Reloop, Denon…), not only Pioneer gear. Before, the sound
+  stayed on the Mac’s speakers.
+- **An unknown controller is no longer treated as a REV5**: A controller Scalpel DJ didn’t know got the REV5’s MIDI
+  map, lights and jog, and its faders stayed closed: no sound. It now keeps its own name, nothing is closed, and a
+  message offers the guided learn. A controller from another brand is also chosen over a MIDI keyboard plugged in next
+  to it.
+- **Mixers that mix on their own**: Rane Seventy and Seventy-Two, DJM-S3, A9, 900NXS2, Xone:96, Numark Scratch, Reloop
+  Elite, Denon X1850, Kontrol Z2: each deck on its own channel, like the DJM-S. Before, the whole mix arrived on a
+  single channel.
+- **Another controller’s jog: measure one turn**: When Scalpel DJ doesn’t know how many ticks per turn your
+  controller’s jog sends, Settings → Controller offers to measure one turn, kept for that model. Before, it got the
+  REV5’s value and scratching didn’t follow your hand.
+- **Your rekordbox, Traktor and VirtualDJ playlists**: Settings → Library → From another DJ app: Traktor playlists and
+  VirtualDJ lists become crates, and so do a rekordbox XML export or an M3U playlist, with each track’s hot cues,
+  loops and beatgrid (rekordbox, Traktor). What you set by hand and what comes from Serato always come first. The
+  tracks’ folders open if needed. On first launch without Serato, Scalpel DJ offers it by itself. Nothing is written
+  to those apps.
+- **REV5 hints only with a REV5**: Tooltips and notes quoting REV5 buttons (“SHIFT + 1/2X on the REV5”) no longer show
+  for people with another controller; with a REV5, nothing changes.
+- **USB-only controller**: A controller that only talks USB (HID), not MIDI (Traktor Kontrol S4 MK3, X1…), is now
+  reported: before, nothing said it was seen.
+- **External disk without Serato**: A disk plugged in without a Serato library is now offered: a message asks which
+  music folder to read on it.
+- **Other controllers: pad colours, headphones, DVS**: Pads on another brand’s controller light up without random
+  colours; the “silent headphones” help and the DVS offer work with it too. “Defaults” for colours restores your
+  controller’s palette.
+- **Without Serato too**: An empty library now tells you how to add your music, with a button to choose a folder, even
+  when your Music folder is empty. The start screen no longer promises Serato to people who don’t have it.
+
+</details>
 
 ## 1.48 BETA — 19 novembre 2026
 
