@@ -1,13 +1,44 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **42 versions publiées** en 13 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **43 versions publiées** en 15 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.48 BETA — 19 novembre 2026
+
+**Version BETA**, comme la 1.47 : pas encore essayée en soirée ; les versions d'avant restent téléchargeables.
+
+- **Moins éblouissant** : Plus aucun texte en blanc pur : le texte le plus clair est maintenant le gris clair de
+  Serato. Les gros chiffres du disque, les titres des morceaux, les noms des pads et du sampler sont moins gras, et
+  tout le reste est écrit un cran plus léger. Les capuchons de métal des faders et les potards ne sont plus presque
+  blancs. Mesuré face à Serato DJ Pro sur le même écran : la bibliothèque était déjà à son niveau, c’est le haut de
+  l’écran qui brillait trop.
+- **Couleurs en tons profonds** : Les couleurs gardent leur teinte, leur richesse et leur rôle, mais dans des tons
+  profonds au lieu de tons clairs qui éclatent aux yeux : un rouge sang, un or sombre, un bleu nuit, un violet
+  profond. Cela vaut pour les onglets des pads, les pads de stems, le sampler, les anneaux des platines, les voyants
+  et les alertes. Les pastilles de tonalité sont ton sur ton : fond profond, texte clair de la même teinte. Un petit
+  texte en couleur garde une clarté lisible. L’onglet de pads choisi reste rempli de sa couleur, avec le texte clair ;
+  un stem entendu garde sa barre de couleur et son nom s’écrit en clair, un stem coupé reste gris et barré.
+
+<details><summary>In English (November 19, 2026)</summary>
+
+- **Easier on the eyes**: No more pure white text: the brightest text is now Serato’s light grey. The big numbers on
+  the platter, track titles, pad and sampler names are less bold, and everything else is written one step lighter. The
+  metal fader caps and knobs are no longer almost white. Measured against Serato DJ Pro on the same screen: the
+  library was already at its level, it was the top of the screen that was too bright.
+- **Colours in deep tones**: Colours keep their hue, their richness and their role, but in deep tones instead of
+  bright ones that glare: a blood red, a dark gold, a midnight blue, a deep purple. This goes for pad tabs, stem pads,
+  the sampler, the platter rings, indicators and alerts. Key badges are tone on tone: deep background, light text of
+  the same hue. Small coloured text keeps a readable lightness. The selected pad tab is still filled with its colour,
+  with light text; a stem you hear keeps its colour bar and its name is written in light text, a muted stem stays grey
+  and struck through.
+
+</details>
 
 ## 1.47 BETA — 17 novembre 2026
 
