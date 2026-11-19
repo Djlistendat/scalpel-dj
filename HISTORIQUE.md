@@ -30,8 +30,10 @@ s'occupe des DJ qui n'ont ni REV5 ni Serato : autres tables, autres logiciels.
 - **Tes playlists de rekordbox, Traktor et VirtualDJ** : Réglages → Bibliothèque → Depuis un autre logiciel : les
   playlists de Traktor et les listes de VirtualDJ deviennent des crates, un export XML de rekordbox ou une playlist
   M3U aussi, avec les hot cues, les boucles et la grille de chaque son (rekordbox, Traktor). Ce que tu as posé à la
-  main et ce qui vient de Serato passent toujours devant. Les dossiers des sons s’ouvrent s’il le faut. Au premier
-  lancement sans Serato, Scalpel DJ le propose tout seul. Rien n’est écrit dans ces logiciels.
+  main et ce qui vient de Serato passent toujours devant. Sur les MP3, rekordbox et Traktor ne comptent pas le début
+  du fichier comme Scalpel DJ : les positions sont recalées d’après l’en-tête du fichier, puis vérifiées sur le son au
+  premier chargement. Les dossiers des sons s’ouvrent s’il le faut. Au premier lancement sans Serato, Scalpel DJ le
+  propose tout seul. Rien n’est écrit dans ces logiciels.
 - **Aides de la REV5 seulement avec une REV5** : Les bulles et notes qui citaient les touches de la REV5 (« SHIFT +
   1/2X sur la REV5 ») ne s’affichent plus à ceux qui ont une autre table ; avec une REV5, rien ne change.
 - **Table en USB seulement** : Une table qui ne parle qu’en USB (HID), pas en MIDI (Traktor Kontrol S4 MK3, X1…), est
@@ -62,9 +64,10 @@ s'occupe des DJ qui n'ont ni REV5 ni Serato : autres tables, autres logiciels.
   REV5’s value and scratching didn’t follow your hand.
 - **Your rekordbox, Traktor and VirtualDJ playlists**: Settings → Library → From another DJ app: Traktor playlists and
   VirtualDJ lists become crates, and so do a rekordbox XML export or an M3U playlist, with each track’s hot cues,
-  loops and beatgrid (rekordbox, Traktor). What you set by hand and what comes from Serato always come first. The
-  tracks’ folders open if needed. On first launch without Serato, Scalpel DJ offers it by itself. Nothing is written
-  to those apps.
+  loops and beatgrid (rekordbox, Traktor). What you set by hand and what comes from Serato always come first. On MP3s,
+  rekordbox and Traktor don’t count the start of the file the way Scalpel DJ does: positions are realigned from the
+  file’s header, then checked against the audio on first load. The tracks’ folders open if needed. On first launch
+  without Serato, Scalpel DJ offers it by itself. Nothing is written to those apps.
 - **REV5 hints only with a REV5**: Tooltips and notes quoting REV5 buttons (“SHIFT + 1/2X on the REV5”) no longer show
   for people with another controller; with a REV5, nothing changes.
 - **USB-only controller**: A controller that only talks USB (HID), not MIDI (Traktor Kontrol S4 MK3, X1…), is now
