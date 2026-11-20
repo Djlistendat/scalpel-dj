@@ -1,13 +1,46 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **45 versions publiées** en 16 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **46 versions publiées** en 16 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.51 BETA — 20 novembre 2026
+
+**Version BETA**, comme la 1.50 : les versions d'avant restent téléchargeables. Cette version corrige ce qu'un long set
+rejoué a montré : au bout d'une vingtaine de minutes, le calcul des stems faisait chauffer le Mac et tout ralentissait.
+
+- **Le Mac ne s’essouffle plus au fil du set** : Un long set rejoué (70 sons d’une vraie soirée, une fausse REV5 qui
+  envoie les messages de la vraie) allait bien pendant 23 minutes ; puis les stems prenaient 2 à 3 fois plus de temps,
+  les chargements passaient de 1 s à 3 à 5 s et les lumières de la table répondaient jusqu’à 0,8 s en retard : le
+  calcul des stems tournait sans arrêt et le Mac chauffait. Maintenant, la platine qu’on vient d’arrêter ne calcule
+  plus que ses 30 s devant (la suite vient quand elle repart), et quand macOS dit le Mac chaud, les stems ne se
+  calculent que 90 s devant la tête de lecture.
+- **Pas de stems pour un mix d’une heure** : Un mix enregistré (plus de 20 min) demandait ses stems en entier : plus
+  de 2 Go de mémoire, la mémoire du Mac tombée à 16 %, un chargement de 22 s. Ses stems ne se calculent plus tout
+  seuls, et la platine dit pourquoi.
+- **Le son choisi reste au milieu de la liste** : En parcourant la liste avec la molette BROWSE ou les flèches, le son
+  choisi reste au milieu : on voit ce qui vient après. Un clic ne fait pas bouger la liste. Réglages → Bibliothèque →
+  « Choix au milieu de la liste ».
+
+<details><summary>In English (November 20, 2026)</summary>
+
+- **The Mac no longer runs out of breath during a set**: A long replayed set (70 tracks from a real gig, a fake REV5
+  sending the real one’s messages) ran fine for 23 minutes; then stems took 2 to 3 times longer, loads went from 1 s
+  to 3–5 s and the controller lights answered up to 0.8 s late: stems were computed non-stop and the Mac heated up.
+  Now the deck you just stopped only computes its next 30 s (the rest comes when it plays again), and when macOS says
+  the Mac is hot, stems are only computed 90 s ahead of the playhead.
+- **No stems for a one-hour mix**: A recorded mix (over 20 min) asked for its full stems: over 2 GB of memory, the
+  Mac’s free memory down to 16 %, a 22 s load. Its stems are no longer computed on their own, and the deck says why.
+- **The selected track stays in the middle of the list**: When you browse the list with the BROWSE knob or the arrow
+  keys, the selected track stays in the middle: you see what comes next. A click doesn’t move the list. Settings →
+  Library → “Selection centered in the list”.
+
+</details>
 
 ## 1.50 BETA — 20 novembre 2026
 
