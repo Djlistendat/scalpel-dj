@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**44 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**45 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.50 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.50)** (20 novembre 2026) : Ta table ne se fige plus pendant un chargement · PLAY part tout de suite, même pendant le calcul des stems · Bouton GLISSER de retour, avec son interrupteur · Proposer de mémoriser une transition : à toi de voir · …
 - **[1.49 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.49)** (19 novembre 2026) : Le son sur ta table, quelle que soit sa marque · Une table inconnue n’est plus prise pour une REV5 · Les tables qui mixent elles-mêmes · Jog d’une autre table : mesurer un tour · …
 - **[1.48 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.48)** (19 novembre 2026) : Moins éblouissant · Couleurs en tons profonds
 - **[1.47 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.47)** (17 novembre 2026) : XDJ-RX3 : la molette BROWSE reste où tu as cliqué · XDJ-RX3 : HOT CUE, LOOPS, SAMPLER, STEMS sur les boutons de mode · XDJ-RX3 : les SOUND COLOR FX · XDJ-RX3 : sélecteur d’effet et MASTER CUE · Casque débranché : le son revient sur le Mac · Choisir les haut-parleurs du Mac à la main · Les préréglages d’Intro Lab gardent la mélodie
-- **[1.46 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.46)** (17 novembre 2026) : Moins de couleurs criardes · Menus déroulants aux couleurs de l’app · Le même espace partout · Curseur de tempo de la vue Extended
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
