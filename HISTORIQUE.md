@@ -1,13 +1,59 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **44 versions publiées** en 15 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **45 versions publiées** en 16 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.50 BETA — 20 novembre 2026
+
+**Version BETA**, comme la 1.49 : les versions d'avant restent téléchargeables. Cette version corrige ce qu'une soirée
+sur la REV5 a montré : la table qui se figeait pendant les chargements, PLAY qui tardait pendant le calcul des stems, le
+bouton GLISSER disparu ; et elle ajoute un journal de soirée.
+
+- **Ta table ne se fige plus pendant un chargement** : La page interrogeait le moteur en attendant sa réponse (liste
+  des cartes son, pour le micro) plusieurs fois par seconde ; pendant un chargement, chaque question attendait : la
+  REV5, ses lumières et ses boutons répondaient en retard. Mesuré sur des chargements depuis un disque externe : 4,9 s de page
+  bloquée sur 75 avant, 3 ms après. Et la liste des versions à vérifier (toute la bibliothèque, 170 ms d’un bloc) ne
+  se recalcule plus à chaque chargement.
+- **PLAY part tout de suite, même pendant le calcul des stems** : Les ordres d’une platine (PLAY, pause, tempo, EQ…)
+  attendaient derrière les morceaux de stems en route vers le moteur : le bouton s’allumait, le son partait une fois
+  la file vidée. Ils ont maintenant leur propre file.
+- **Bouton GLISSER de retour, avec son interrupteur** : La pastille GLISSER était cachée par l’affichage natif (on
+  n’en voyait que la lueur), et ne venait qu’à partir de 4 BPM d’écart. Elle revient pour tout écart, et le
+  glissement s’arrête ou se remet d’un clic sur son bouton, à côté de Q (aussi dans Réglages → Transitions).
+- **Proposer de mémoriser une transition : à toi de voir** : Le message « Transition notée… Mémoriser » a un bouton «
+  Ne plus proposer », et un interrupteur dans Réglages → Versions et liens.
+- **La liste défile sans petits sauts** : Un cran sur deux, toutes les lignes visibles étaient refaites (même avec le
+  bouton BROWSE de la table) : 1 143 lignes refaites pour un geste qui en demande 55.
+- **Journal de soirée** : Un fichier par soirée (Réglages → À propos → Montrer dans le Finder) : chargements, PLAY qui
+  tarde, page ou moteur figés, erreurs. Si quelque chose ne va pas en soirée, ce fichier dit ce qui s’est passé.
+
+<details><summary>In English (November 20, 2026)</summary>
+
+- **Your controller no longer freezes while a track loads**: The page asked the engine for things and waited for the
+  answer (the sound card list, for the mic) several times a second; during a load each question waited, so the REV5,
+  its lights and its buttons answered late. Measured on loads from an external disk: 4.9 s of blocked page out of 75 before, 3
+  ms after. And the list of versions to check (the whole library, 170 ms in one go) is no longer recomputed on every
+  load.
+- **PLAY starts right away, even while stems are being computed**: A deck’s commands (PLAY, pause, tempo, EQ…) waited
+  behind the stem chunks on their way to the engine: the button lit up, the sound started once the queue was empty.
+  They now have their own queue.
+- **GLIDE button is back, with its on/off switch**: The GLIDE pill was hidden by the native display (only its glow
+  showed), and only came from a 4 BPM gap. It now comes back for any gap, and the glide turns off or on with one
+  click on its button, next to Q (also in Settings → Transitions).
+- **Offer to save a transition: your call**: The “Transition noted… Save” message has a “Don’t offer again” button,
+  and a switch in Settings → Versions and links.
+- **The list scrolls without little jumps**: Every other step, all visible rows were rebuilt (also with the BROWSE
+  knob of your controller): 1,143 rows rebuilt for a gesture that needs 55.
+- **Gig log**: One file per gig (Settings → About → Show in Finder): track loads, slow PLAY, frozen page or engine,
+  errors. If something goes wrong during a gig, this file tells what happened.
+
+</details>
 
 ## 1.49 BETA — 19 novembre 2026
 
