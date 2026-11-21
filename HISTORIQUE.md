@@ -1,13 +1,93 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **46 versions publiées** en 16 jours, plus de 80 versions de
-travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42) ne sont jamais sorties seules : leurs nouveautés sont
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **47 versions publiées** en 16 jours, plus de 80 versions de
+travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.53 BETA — 20 novembre 2026
+
+**Version BETA**, comme la 1.51 : les versions d'avant restent téléchargeables. Cette version reprend la 1.52, jamais
+sortie seule : le son part sur la platine dès qu'il est décodé, et la forme d'onde est retravaillée (couleurs, contour,
+Stems EQ).
+
+- **MID baissé : la forme d’onde suit, comme dans Serato** : En Stems EQ, baisser MID (la mélodie) ne changeait
+  presque rien à la forme d’onde, et au premier cran une copie grise du morceau apparaissait autour. Maintenant c’est
+  le morceau lui-même, et chaque stem y garde sa part : couper la mélodie retire sa part entière (mesuré sur un vrai
+  son : la surface en couleur baisse de 10 %, contre 3 % avant), avec la silhouette grise autour. Là où la mélodie
+  joue seule, tout passe au gris. Un stem laissé seul (une voix) est toujours agrandi, sans saut quand on baisse les
+  autres.
+- **Formes d’onde en tons profonds et saturés** : Les mêmes repères (grave rouge, médium vert, aigu bleu), en couleurs
+  saturées et profondes : rouge velours, vermillon, ambre, or foncé, émeraude, saphir, indigo. Riches sans être fluo,
+  ni pâles, ni ternes.
+- **Finitions partout** : Numéros de mesure de la forme d’onde lisibles (une petite pastille sous leur trait, ils
+  étaient à moitié cachés) ; interrupteurs arrêtés plus discrets (bouton gris) ; titre de la soirée en cours entier
+  dans le Journal ; sous-crates en retrait sous leur crate dans Bookings (au lieu du nom du parent répété et du leur
+  coupé) ; étoiles des favoris, croix et boutons de lecture dessinés comme le reste des icônes (c’étaient des
+  caractères).
+- **Boutons principaux plus sobres** : « Nouvelle date », « + Soirée », « Choisir un dossier », « Exporter », «
+  Démarrer » : clairs et brillants, texte noir, ils faisaient « jouet » à côté du reste. Ils prennent maintenant un
+  ton profond de la couleur de ton skin, texte clair. La vue d’ensemble des platines perd aussi son halo brun autour
+  des crêtes.
+- **Noms entiers dans la bande FX et le sampler** : Les effets s’affichaient coupés (« Écho de ... », « Délai pin...
+  ») : leur nom tient maintenant en entier (case du numéro plus fine, flèche du menu au survol, texte un peu plus
+  petit seulement s’il le faut). Dans le sampler, un nom trop long garde le titre du son entier plutôt que « titre ·
+  artiste » coupé ; l’artiste reste dans la bulle.
+- **Forme d’onde plus nette, au contour continu** : Chaque instant était un trait de sa propre longueur : bords en
+  escalier, « poils », couleurs qui sautaient d’un trait à l’autre, la basse en rayures. Le contour est maintenant une
+  courbe continue, lissée le long du temps (sans flou en travers) : les coups de grosse caisse restent francs et la
+  basse dessine ses ondulations. Toujours presque rien pour la carte graphique.
+- **Le téléphone aussi** : La télécommande et le Studio du téléphone reprennent la nouvelle forme d’onde (contour
+  continu, couleurs profondes), les pads de stems sombres à barre de couleur comme sur le Mac, les touches allumées en
+  tons profonds, les capuchons des faders au même métal brossé, et des icônes dessinées à la place des caractères.
+- **La forme d’onde des samples, et leur point de départ** : Chaque case du sampler montre la forme d’onde de son son,
+  comme dans Serato. Dans ses réglages (clic droit), un clic ou un glisser sur la grande forme d’onde place le point
+  de départ ; « Au premier son » saute le silence du début.
+- **Le son joue dès qu’il est chargé** : L’analyse (volume, tonalité, empreinte) passait avant que le son parte sur la
+  platine : 0,3 à 0,9 s d’attente, plus quand le Mac travaillait. Un son qui a déjà sa grille (Serato 5, posée à la
+  main, ou déjà analysé par Scalpel) part maintenant sur la platine dès qu’il est décodé, et l’analyse finit derrière,
+  sans rien couper.
+
+<details><summary>In English (November 20, 2026)</summary>
+
+- **Lower MID: the waveform follows, like in Serato**: In Stems EQ, lowering MID (the melody) barely changed the
+  waveform, and at the first notch a grey copy of the track appeared around it. Now it is the track itself, and each
+  stem keeps its share of it: cutting the melody removes its whole share (measured on a real track: the coloured area
+  drops by 10 %, against 3 % before), with the grey silhouette around it. Where the melody plays alone, everything
+  turns grey. A stem left on its own (a vocal) is still enlarged, with no jump as you bring the others down.
+- **Waveforms in deep, saturated tones**: The same cues (red lows, green mids, blue highs), in saturated, deep
+  colours: velvet red, vermilion, amber, dark gold, emerald, sapphire, indigo. Rich without being neon, pale or dull.
+- **Finishing touches everywhere**: Waveform bar numbers readable (a small badge under their line, they were half
+  hidden); switches that are off are quieter (grey knob); full title of the current night in the Journal; sub-crates
+  indented under their crate in Bookings (instead of the parent’s name repeated and theirs cut off); favourite stars,
+  close and play buttons drawn like the rest of the icons (they were characters).
+- **Calmer main buttons**: “Nouvelle date”, “+ Soirée”, “Choisir un dossier”, “Exporter”, “Démarrer”: light and glossy
+  with black text, they looked like a toy next to the rest. They now take a deep tone of your skin’s colour, with
+  light text. The decks’ overview also loses the brown halo around the peaks.
+- **Full names in the FX strip and the sampler**: Effects were shown cut off (“Écho de ...”, “Délai pin...”): their
+  name now fits in full (slimmer number box, menu arrow on hover, slightly smaller text only when needed). In the
+  sampler, a name that is too long keeps the sound’s full title rather than a cut-off “title · artist”; the artist
+  stays in the tooltip.
+- **Sharper waveform, with a continuous outline**: Each instant was a line of its own length: stair-step edges,
+  “hairs”, colours jumping from one line to the next, the bass in stripes. The outline is now a continuous curve,
+  smoothed along time (no blur across): kick drums stay crisp and the bass draws its waves. Still almost nothing for
+  the graphics card.
+- **The phone too**: The remote and the phone Studio get the new waveform (continuous outline, deep colours), dark
+  stems pads with a colour bar like on the Mac, lit buttons in deep tones, fader caps in the same brushed metal, and
+  drawn icons instead of characters.
+- **Sample waveforms, and their start point**: Each sampler slot shows its sound’s waveform, like in Serato. In its
+  settings (right-click), a click or drag on the large waveform sets the start point; “At first sound” skips the
+  silence at the start.
+- **The track plays as soon as it’s loaded**: The analysis (volume, key, fingerprint) ran before the track reached the
+  deck: 0.3 to 0.9 s of waiting, more when the Mac was busy. A track that already has its beatgrid (Serato 5, set by
+  hand, or already analysed by Scalpel) now reaches the deck as soon as it’s decoded, and the analysis finishes
+  behind, without cutting anything.
+
+</details>
 
 ## 1.51 BETA — 20 novembre 2026
 
