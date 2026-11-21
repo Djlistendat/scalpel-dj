@@ -1,13 +1,38 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **48 versions publiées** en 17 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **49 versions publiées** en 17 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.55 BETA — 21 novembre 2026
+
+**Version BETA**, comme la 1.54 : les versions d'avant restent téléchargeables.
+
+- **Le micro de la REV5 marche dans tous les cas** : La REV5 peut se mettre à envoyer le micro sur ses deux paires
+  d’entrées USB (par exemple après être passée par un autre logiciel), même quand son utilitaire dit le contraire :
+  Scalpel DJ ne voyait alors plus ta voix. Il retire maintenant de l’entrée le son qu’il envoie lui-même à la table,
+  et garde ta voix seule, quel que soit l’état de la REV5 (au premier allumage, la voix reste coupée quelques
+  secondes, le temps de mesurer ce retour assez finement pour qu’il ne fasse jamais larsen ; il est ensuite retiré à
+  plus de 70 dB). Et la liste ENTRÉE ne propose plus « Entrées 3-4 » ni « Entrées 1-2 » : sur une REV5, elles
+  renvoyaient la voix dans la table, un larsen numérique (bruit atroce, barre toute rouge) ; un réglage d’avant sur
+  l’une d’elles revient sur « Micro de la REV5 ».
+
+<details><summary>In English (November 21, 2026)</summary>
+
+- **The REV5 mic works in every case**: The REV5 can start sending the mic on both pairs of its USB inputs (for
+  example after going through another app), even when its utility says otherwise: Scalpel DJ then no longer saw your
+  voice. It now removes from the input the sound it sends to the deck itself and keeps your voice alone, whatever
+  state the REV5 is in (the first time it is turned on, the voice stays muted for a few seconds while this return is
+  measured precisely enough never to feed back; it is then removed by more than 70 dB). And the INPUT list no longer
+  offers “Inputs 3-4” or “Inputs 1-2”: on a REV5 they sent the voice back into the deck, a digital feedback loop
+  (awful noise, bar all red); a previous setting on one of them switches back to “REV5 mic”.
+
+</details>
 
 ## 1.54 BETA — 21 novembre 2026
 
