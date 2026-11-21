@@ -13,6 +13,16 @@ dans la version suivante.
 
 **Version BETA**, comme la 1.54 : les versions d'avant restent téléchargeables.
 
+- **Pré-écoute sans erreur** : La barre de pré-écoute se dessine de nouveau normalement : depuis la 1.32, chaque image
+  de la pré-écoute provoquait une erreur dans l’app (trouvé par la nouvelle batterie qui appuie sur tous les boutons).
+- **Le tempo reste d’un son à l’autre** : Comme dans Serato, le curseur de tempo d’une platine garde sa place quand tu
+  charges un autre son : le nouveau son part tout de suite au même pourcentage (fader à +5 %, il part à +5 %). Avant,
+  il repartait à son tempo d’origine et il fallait toucher le fader de la table à chaque son pour que Scalpel DJ
+  reprenne sa position.
+- **Boucle en cours bien visible** : Quand une boucle tourne, LOOP et la taille de la boucle s’allument en vert plein
+  (ils restaient gris : rien ne disait que la boucle était prise), et la zone de la boucle se voit nettement sur la
+  forme d’onde : encadrée et teintée de vert par-dessus le son (avant, une teinte très pâle cachée derrière la forme
+  d’onde).
 - **Le micro de la REV5 marche dans tous les cas** : La REV5 peut se mettre à envoyer le micro sur ses deux paires
   d’entrées USB (par exemple après être passée par un autre logiciel), même quand son utilitaire dit le contraire :
   Scalpel DJ ne voyait alors plus ta voix. Il retire maintenant de l’entrée le son qu’il envoie lui-même à la table,
@@ -24,6 +34,15 @@ dans la version suivante.
 
 <details><summary>In English (November 21, 2026)</summary>
 
+- **Preview without errors**: The preview bar draws properly again: since 1.32, every frame of a preview caused an
+  error in the app (found by the new test run that presses every button).
+- **Tempo stays from one track to the next**: As in Serato, a deck’s tempo slider keeps its place when you load
+  another track: the new track starts right away at the same percentage (fader at +5%, it starts at +5%). Before, it
+  went back to its original tempo and you had to touch the deck’s fader on every track for Scalpel DJ to pick its
+  position up again.
+- **Running loop clearly visible**: When a loop is running, LOOP and the loop size light up in solid green (they
+  stayed grey: nothing showed the loop had engaged), and the loop zone stands out on the waveform: framed and tinted
+  green over the sound (before, a very pale tint hidden behind the waveform).
 - **The REV5 mic works in every case**: The REV5 can start sending the mic on both pairs of its USB inputs (for
   example after going through another app), even when its utility says otherwise: Scalpel DJ then no longer saw your
   voice. It now removes from the input the sound it sends to the deck itself and keeps your voice alone, whatever
