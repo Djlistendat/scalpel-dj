@@ -1,13 +1,55 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **47 versions publiées** en 16 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **48 versions publiées** en 17 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.54 BETA — 21 novembre 2026
+
+**Version BETA**, comme la 1.53 : les versions d'avant restent téléchargeables.
+
+- **Colonne Débit** : Une nouvelle colonne (menu des colonnes de la liste) montre le débit de chaque fichier : « 320
+  kb/s », « ≈245 kb/s » pour un MP3 à débit variable (sa moyenne exacte), le débit d’un WAV, AIFF, FLAC ou M4A. Un son
+  compressé sous 192 kb/s s’affiche en ambre ; si la recherche de doublons a mesuré qu’il vient d’une source moins
+  bonne que son débit ne l’annonce (un « 320 » tiré d’un 128), en rouge. Elle se trie comme les autres. La case sans
+  nom du menu des colonnes s’appelle maintenant « Pochettes ».
+- **Ranger ma bibliothèque** : Déplace des sons ou des vidéos d’un disque à l’autre en un geste : clic droit, « Ranger
+  ailleurs… », ou Réglages → Bibliothèque (par exemple : toutes les vidéos du Mac vers ton disque externe,
+  sous-dossiers gardés). Chaque fichier est copié, relu, puis retiré ; ses crates, cues, réglages, analyse et journal
+  le suivent dans Scalpel DJ, et Serato est mis à jour (Serato fermé), ses fichiers sauvegardés avant. « Annuler »
+  remet tout comme avant.
+- **Une crate sur plusieurs disques : une seule, comme dans Serato** : Une crate rangée sur plusieurs disques (le Mac,
+  des disques externes) pouvait sortir en plusieurs exemplaires dans la liste : celle de la base de Serato restait à
+  part, et un nom avec des accents pouvait être écrit autrement d’un disque à l’autre. Elle n’en fait plus qu’une,
+  avec tous ses sons, d’où qu’ils viennent. Les dates préparées, les dossiers liés et les rangements faits dans
+  Scalpel la suivent.
+- **Écran de démarrage plus sobre** : La carte « Reprendre là où tu en étais » n’a plus de cadre vert ni d’anneau
+  blanc autour du bouton : une seule couleur, celle du bouton principal.
+
+<details><summary>In English (November 21, 2026)</summary>
+
+- **Bitrate column**: A new column (list columns menu) shows each file’s bitrate: “320 kb/s”, “≈245 kb/s” for a
+  variable-bitrate MP3 (its exact average), the bitrate of a WAV, AIFF, FLAC or M4A. A compressed track under 192 kb/s
+  shows in amber; if the duplicate search measured that it comes from a lower-quality source than its bitrate suggests
+  (a “320” made from a 128), in red. It sorts like the others. The unnamed box in the columns menu is now called
+  “Artwork”.
+- **Organize my library**: Move tracks or videos from one drive to another in one go: right-click, “Move to…”, or
+  Settings → Library (for example: all the Mac’s videos to your external drive, subfolders kept). Each file is copied,
+  checked, then removed; its crates, cues, settings, analysis and history follow it in Scalpel DJ, and Serato is
+  updated (with Serato closed), its files backed up first. “Undo” puts everything back.
+- **A crate on several drives: just one, like in Serato**: A crate stored on several drives (the Mac, external drives)
+  could show up several times in the list: the one from Serato’s database stayed separate, and a name with accents
+  could be written differently from one drive to another. It is now a single crate with all its tracks, wherever they
+  come from. Prepared dates, linked folders and arrangements made in Scalpel follow it.
+- **Calmer start screen**: The “Pick up where you left off” card no longer has a green frame or a white ring around
+  the button: a single colour, the main button’s.
+
+</details>
 
 ## 1.53 BETA — 20 novembre 2026
 
