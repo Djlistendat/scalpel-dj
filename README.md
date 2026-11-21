@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**46 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**47 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.53 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.53)** (20 novembre 2026) : MID baissé : la forme d’onde suit, comme dans Serato · Formes d’onde en tons profonds et saturés · Finitions partout · Boutons principaux plus sobres · …
 - **[1.51 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.51)** (20 novembre 2026) : Le Mac ne s’essouffle plus au fil du set · Pas de stems pour un mix d’une heure · Le son choisi reste au milieu de la liste
 - **[1.50 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.50)** (20 novembre 2026) : Ta table ne se fige plus pendant un chargement · PLAY part tout de suite, même pendant le calcul des stems · Bouton GLISSER de retour, avec son interrupteur · Proposer de mémoriser une transition : à toi de voir · …
 - **[1.49 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.49)** (19 novembre 2026) : Le son sur ta table, quelle que soit sa marque · Une table inconnue n’est plus prise pour une REV5 · Les tables qui mixent elles-mêmes · Jog d’une autre table : mesurer un tour · …
-- **[1.48 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.48)** (19 novembre 2026) : Moins éblouissant · Couleurs en tons profonds
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
