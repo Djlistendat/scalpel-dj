@@ -1,13 +1,52 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **49 versions publiées** en 17 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **50 versions publiées** en 18 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.56 BETA — 22 novembre 2026
+
+**Version BETA**, comme la 1.55 : les versions d'avant restent téléchargeables. Le paquet de l'app change (texte de l'accès à la bibliothèque Musique) : au premier lancement, macOS peut redemander une fois les accès (dossiers, micro).
+
+- **Ta REV5 garde toutes ses commandes, même après un relevé** : Un relevé guidé fait sur une table que Scalpel DJ
+  connaît déjà d’après sa liste officielle (REV5, REV7, DJM, CDJ, DDJ…) remplaçait sa définition complète par les
+  seules commandes relevées : il ne restait qu’une partie des fonctions, et les touches des stems répondaient mal. La
+  définition officielle revient toute seule, et le relevé n’est plus proposé pour la remplacer.
+- **Bibliothèque Musique lue comme Serato** : Les playlists de l’app Musique d’Apple sont lues directement, comme le
+  fait Serato DJ Pro, sans fichier XML à partager (Musique ne le propose plus toujours) : la première fois, macOS
+  demande l’accès à « Médias et Apple Music ». Un fichier exporté à la main (Fichier → Bibliothèque → Exporter la
+  bibliothèque…) se choisit aussi dans Réglages → Bibliothèque.
+- **Doublons : la recherche dit où elle en est** : Chaque étape s’affiche (tri, copies possibles, écoute), avec un
+  bilan à la fin, même quand rien ne ressort : combien de sons comparés, combien laissés de côté (disque débranché,
+  fichier introuvable), combien de ressemblances écartées à l’écoute. Un message prévient de la fin même si tu as
+  quitté la page, et une erreur se dit au lieu de revenir à « Pas encore cherché ».
+- **Ranger : la place comptée juste, et ce qui tient** : Seuls les fichiers qui changent de disque comptent pour la
+  place libre (sur le même disque, rien n’est copié). S’il en manque, Scalpel DJ dit combien et propose « Ranger ce
+  qui tient » ; et une crate se range seule : clic droit sur la crate, « Ranger cette crate… ».
+
+<details><summary>In English (November 22, 2026)</summary>
+
+- **Your REV5 keeps all its controls, even after learning**: Guided learning done on a controller Scalpel DJ already
+  knows from its official list (REV5, REV7, DJM, CDJ, DDJ…) replaced its complete mapping with only the learned
+  controls: only part of the features remained, and the stems buttons responded badly. The official mapping comes back
+  on its own, and learning is no longer offered to replace it.
+- **Music library read like Serato**: Apple Music app playlists are read directly, the way Serato DJ Pro does, with no
+  XML file to share (Music does not always offer it any more): the first time, macOS asks for “Media & Apple Music”
+  access. A file exported by hand (File → Library → Export Library…) can also be chosen in Settings → Library.
+- **Duplicates: the search shows where it is**: Each step is shown (sorting, possible copies, listening), with a
+  summary at the end even when nothing turns up: how many tracks compared, how many left out (unplugged drive, missing
+  file), how many look-alikes ruled out by listening. A message tells you when it ends even if you left the page, and
+  an error is shown instead of going back to “Not searched yet”.
+- **Move: space counted right, and what fits**: Only files that change drive count toward free space (on the same
+  drive, nothing is copied). If space runs short, Scalpel DJ says how much and offers “Move what fits”; and a crate
+  can be moved on its own: right-click the crate, “Move this crate…”.
+
+</details>
 
 ## 1.55 BETA — 21 novembre 2026
 
