@@ -1,13 +1,33 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **50 versions publiées** en 18 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **51 versions publiées** en 18 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.57 BETA — 22 novembre 2026
+
+**Version BETA**, comme la 1.56. Le paquet de l'app ne change pas : si tu as la 1.56, macOS ne redemande rien.
+
+- **L’app ne se ferme plus toute seule** : La bibliothèque de l’app Musique d’Apple est maintenant lue par un petit
+  programme à part, refermé aussitôt, et plus dans l’app elle-même : chez un DJ, bibliothèque Musique cochée, la 1.56
+  se fermait seule quelques minutes après son lancement, même sans rien faire. Si ce programme s’arrête, l’app
+  continue sans la bibliothèque Musique et le dit.
+
+<details><summary>In English (November 22, 2026)</summary>
+
+BETA version, like 1.56. The app bundle doesn't change: if you have 1.56, macOS asks for nothing.
+
+- **The app no longer closes on its own**: Apple’s Music library is now read by a small separate program that closes
+  right away, no longer inside the app itself: for a DJ with the Music library ticked, 1.56 closed on its own a few
+  minutes after launch, even when doing nothing. If that program stops, the app carries on without the Music library
+  and says so.
+
+</details>
 
 ## 1.56 BETA — 22 novembre 2026
 
