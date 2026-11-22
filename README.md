@@ -74,17 +74,17 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
    clique sur « Terminé ».
 3. Va dans Réglages Système → Confidentialité et sécurité. Plus bas, macOS dit que Scalpel DJ a été bloqué :
    clique sur « Ouvrir quand même », puis confirme.
-4. Au premier lancement, l'app demande l'accès à tes dossiers de musique, et au micro seulement si tu allumes
-   l'autotune.
+4. Au premier lancement, l'app demande l'accès à tes dossiers de musique, au micro seulement si tu allumes
+   l'autotune, et à ta bibliothèque Musique seulement si tu l'allumes (Réglages → Bibliothèque).
 
 ## Historique des versions
 
-**49 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**50 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.56 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.56)** (22 novembre 2026) : Ta REV5 garde toutes ses commandes, même après un relevé · Bibliothèque Musique lue comme Serato · Doublons : la recherche dit où elle en est · Ranger : la place comptée juste, et ce qui tient
 - **[1.55 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.55)** (21 novembre 2026) : Pré-écoute sans erreur · Le tempo reste d’un son à l’autre · Boucle en cours bien visible · Le micro de la REV5 marche dans tous les cas
 - **[1.54 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.54)** (21 novembre 2026) : Colonne Débit · Ranger ma bibliothèque · Une crate sur plusieurs disques : une seule, comme dans Serato · Écran de démarrage plus sobre
 - **[1.53 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.53)** (20 novembre 2026) : MID baissé : la forme d’onde suit, comme dans Serato · Formes d’onde en tons profonds et saturés · Finitions partout · Boutons principaux plus sobres · …
-- **[1.51 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.51)** (20 novembre 2026) : Le Mac ne s’essouffle plus au fil du set · Pas de stems pour un mix d’une heure · Le son choisi reste au milieu de la liste
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
