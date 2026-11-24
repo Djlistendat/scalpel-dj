@@ -1,13 +1,37 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **51 versions publiées** en 18 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **52 versions publiées** en 19 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.58 BETA — 23 novembre 2026
+
+**Version BETA**, comme la 1.57. Le paquet de l'app ne change pas : si tu as la 1.56 ou la 1.57, macOS ne redemande rien.
+
+- **Les plateaux de la REV7 répondent** : Réglée en usine (MIDI MODE = AUTO, comme pour Serato et rekordbox), la
+  DDJ-REV7 n’envoie pas la rotation de ses plateaux comme le dit sa liste MIDI officielle, mais leur position, que
+  Scalpel DJ ignorait : les boutons marchaient, les plateaux rien. Scalpel DJ lit maintenant cette position, d’après
+  le fichier de la REV7 que Pioneer livre avec rekordbox : scratch son arrêté, et en lecture le moteur suivi comme un
+  disque, la main qui le freine fait le scratch. Le nombre de pas par tour se mesure tout seul après une seconde de
+  lecture moteur en route. Pas encore essayé sur une vraie REV7 : dis-nous comment ça se sent sous la main.
+
+<details><summary>In English (November 23, 2026)</summary>
+
+BETA version, like 1.57. The app bundle doesn't change: if you have 1.56 or 1.57, macOS asks for nothing.
+
+- **The REV7’s platters respond**: Set at the factory (MIDI MODE = AUTO, as for Serato and rekordbox), the DDJ-REV7
+  doesn’t send its platter rotation the way its official MIDI list says, but their position, which Scalpel DJ ignored:
+  the buttons worked, the platters did nothing. Scalpel DJ now reads this position, from the REV7 file Pioneer ships
+  with rekordbox: scratching with the track stopped, and while playing the motor is followed like a record, a hand
+  that slows it down scratches. The steps per turn are measured on their own after one second of playback with the
+  motor running. Not tried on a real REV7 yet: tell us how it feels under your hand.
+
+</details>
 
 ## 1.57 BETA — 22 novembre 2026
 
