@@ -1,13 +1,33 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **52 versions publiées** en 19 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **53 versions publiées** en 19 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.59 BETA — 23 novembre 2026
+
+**Version BETA**, comme la 1.58. Le paquet de l'app ne change pas : si tu as la 1.56 ou plus récente, macOS ne redemande rien.
+
+- **La REV7 n’est plus prise pour une table de scratch** : Au branchement d’une DDJ-REV7, Scalpel DJ proposait
+  d’allumer le DVS pour des vinyles timecode ou des Phase, comme pour une DJM-S : ses plateaux motorisés mènent déjà
+  les platines, il n’y a rien de tel à brancher. Ce message ne vient plus pour une table à plateaux motorisés, et la
+  fenêtre de mise en route de la REV7 ne répète plus deux fois la même consigne.
+
+<details><summary>In English (November 23, 2026)</summary>
+
+BETA version, like 1.58. The app bundle doesn't change: if you have 1.56 or newer, macOS asks for nothing.
+
+- **The REV7 is no longer taken for a scratch mixer**: When a DDJ-REV7 was plugged in, Scalpel DJ offered to turn on
+  DVS for timecode vinyl or Phase, as for a DJM-S: its motorized platters already drive the decks, there’s nothing
+  like that to plug in. This message no longer shows for a mixer with motorized platters, and the REV7’s setup window
+  no longer repeats the same instruction twice.
+
+</details>
 
 ## 1.58 BETA — 23 novembre 2026
 
