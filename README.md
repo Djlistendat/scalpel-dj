@@ -79,12 +79,12 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**52 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**53 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.59 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.59)** (23 novembre 2026) : La REV7 n’est plus prise pour une table de scratch
 - **[1.58 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.58)** (23 novembre 2026) : Les plateaux de la REV7 répondent
 - **[1.57 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.57)** (22 novembre 2026) : L’app ne se ferme plus toute seule
 - **[1.56 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.56)** (22 novembre 2026) : Ta REV5 garde toutes ses commandes, même après un relevé · Bibliothèque Musique lue comme Serato · Doublons : la recherche dit où elle en est · Ranger : la place comptée juste, et ce qui tient
-- **[1.55 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.55)** (21 novembre 2026) : Pré-écoute sans erreur · Le tempo reste d’un son à l’autre · Boucle en cours bien visible · Le micro de la REV5 marche dans tous les cas
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
