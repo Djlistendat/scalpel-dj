@@ -1,8 +1,8 @@
 # Scalpel DJ
 
-**Depuis 2006, les DJ demandent des choses à Serato. Toujours pas. Tout ça, c'est dans Scalpel DJ. Gratuit.**
+**Depuis 2006, les DJ demandent des choses à Serato. Toujours pas. Tout ça, c'est dans Scalpel DJ. Gratuit (sauf le Pack Voix).**
 
-Logiciel DJ gratuit pour Mac avec puce Apple (M1 ou plus récent), en français ou en anglais. Ta bibliothèque Serato
+Logiciel DJ gratuit (sauf le Pack Voix) pour Mac avec puce Apple (M1 ou plus récent), en français ou en anglais. Ta bibliothèque Serato
 DJ Pro se charge toute seule (sons, crates, cues, boucles, grilles, historique, pads du sampler), sans la copier ni la
 modifier, et tout marche sans Internet.
 
@@ -46,7 +46,7 @@ Chaque demande a été relue sur le forum de Serato, et cherchée dans toutes se
 
 | | Scalpel DJ | Serato DJ Pro |
 |---|---|---|
-| Prix | **Gratuit** | 299 $ ou 11,99 $ par mois (ou offert avec une table qui le débloque) |
+| Prix | **Gratuit** (Pack Voix : 49,90 €, une fois) | 299 $ ou 11,99 $ par mois (ou offert avec une table qui le débloque) |
 | Key lock de haute qualité | **Inclus** | Pitch 'n Time : extension payante (DJ Suite, 499 $ ou 14,99 $ par mois) |
 | DVS (vinyles et CDJ en timecode) | **Inclus** (à tester) | Extension payante (DJ Suite), offerte avec certaines tables |
 | Processeur, deux platines, MacBook Air M1 (app + affichage de macOS) | **72 %** | 81 % |
@@ -79,18 +79,20 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## Historique des versions
 
-**53 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
+**54 versions publiées depuis le 4 novembre 2026** (le projet a commencé le 18 octobre avec la 0.1). Les dernières :
 
+- **[1.60 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.60)** (28 novembre 2026) : Pack Voix : la voix du micro s’achète une fois · Un son chargé sur une platine qui joue part tout de suite · Deux ordinateurs sur la même table
 - **[1.59 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.59)** (23 novembre 2026) : La REV7 n’est plus prise pour une table de scratch
 - **[1.58 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.58)** (23 novembre 2026) : Les plateaux de la REV7 répondent
 - **[1.57 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.57)** (22 novembre 2026) : L’app ne se ferme plus toute seule
-- **[1.56 BETA](https://github.com/Djlistendat/scalpel-dj/releases/tag/v1.56)** (22 novembre 2026) : Ta REV5 garde toutes ses commandes, même après un relevé · Bibliothèque Musique lue comme Serato · Doublons : la recherche dit où elle en est · Ranger : la place comptée juste, et ce qui tient
 
 **[Tout l'historique, version par version →](HISTORIQUE.md)**
 
 ## Bon à savoir
 
-- C'est gratuit. Rien ne passe par Internet : tout marche sans Wi-Fi en club.
+- C'est gratuit, sauf le **Pack Voix** : la voie MICRO · AUTOTUNE (autotune live, écho et réverb calés sur le tempo,
+  anti-larsen) s'achète une fois, 49,90 €, avec 15 minutes d'essai par jour. Rien ne passe par Internet : tout marche
+  sans Wi-Fi en club.
 - Scalpel DJ n'écrit ni dans tes sons ni dans les fichiers de Serato. Rouvre Serato quand tu veux : tout y est comme
   avant. Seule exception, à ta demande : « Ranger ma bibliothèque » déplace des sons d'un disque à l'autre et met
   Serato à jour (Serato fermé, ses fichiers sauvegardés avant, tout s'annule).
@@ -102,9 +104,9 @@ Ce lien donne toujours la dernière version. Les anciennes sont dans [Versions](
 
 ## In English
 
-**Since 2006, DJs have been asking Serato for things. Still nothing. It's all in Scalpel DJ. Free.**
+**Since 2006, DJs have been asking Serato for things. Still nothing. It's all in Scalpel DJ. Free (except the Voice Pack).**
 
-A free DJ app for Apple Silicon Macs (M1 or later). Your Serato DJ Pro library loads by itself (tracks, crates, cues,
+A free DJ app (except the Voice Pack: live autotune mic, €49.90 once, 15-minute daily trial) for Apple Silicon Macs (M1 or later). Your Serato DJ Pro library loads by itself (tracks, crates, cues,
 loops, grids, history, sampler pads), without copying or changing it, and everything works offline.
 [Download the latest version (1.2 GB)](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip).
 
@@ -129,12 +131,12 @@ two decks on an M1 MacBook Air (72 % vs 81 %). First launch: open it once, then 
 
 ## Droits
 
-**© 2026 Dj ListenDat. Tous droits réservés.** Scalpel DJ est gratuit à utiliser. Ce dépôt ne contient pas son code
+**© 2026 Dj ListenDat. Tous droits réservés.** Scalpel DJ est gratuit à utiliser, sauf le Pack Voix, payant. Ce dépôt ne contient pas son code
 source, et l'app n'est pas un logiciel libre : il est interdit de la copier, la décompiler, la désassembler, la
 modifier, d'en reprendre le code, de la redistribuer ou de la revendre, en tout ou en partie, sans l'accord écrit de
 Dj ListenDat. Pour la partager, envoie le lien de cette page.
 
-**© 2026 Dj ListenDat. All rights reserved.** Scalpel DJ is free to use. This repository does not contain its source
+**© 2026 Dj ListenDat. All rights reserved.** Scalpel DJ is free to use, except the paid Voice Pack. This repository does not contain its source
 code, and the app is not open source: you may not copy, decompile, disassemble, modify, reuse its code, redistribute or
 resell it, in whole or in part, without Dj ListenDat's written permission. To share it, send the link to this page.
 
