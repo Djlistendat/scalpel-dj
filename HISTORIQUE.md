@@ -1,13 +1,55 @@
 # Scalpel DJ — historique des versions
 
 Toutes les versions publiées, la plus récente en haut. Le projet a commencé le 18 octobre 2026 avec la 0.1 ; il est sur
-GitHub depuis le 4 novembre (0.87). Aujourd'hui : **53 versions publiées** en 19 jours, plus de 80 versions de
+GitHub depuis le 4 novembre (0.87). Aujourd'hui : **54 versions publiées** en 24 jours, plus de 80 versions de
 travail avant. Les versions qui manquent (0.88, 0.91, 0.97, 1.10, 1.20, 1.24 à 1.29, 1.31, 1.34 à 1.37, 1.40 à 1.42, 1.52) ne sont jamais sorties seules : leurs nouveautés sont
 dans la version suivante.
 
 **English:** every release, newest first; the English notes are under « In English ».
 
 [⬇ Télécharger la dernière version](https://github.com/Djlistendat/scalpel-dj/releases/latest/download/Scalpel-DJ-Mac.zip)
+
+## 1.60 BETA — 28 novembre 2026
+
+**Version BETA**, comme la 1.59. Le paquet de l'app ne change pas : si tu as la 1.56 ou plus récente, macOS ne redemande rien.
+
+- **Pack Voix : la voix du micro s’achète une fois** : La voie MICRO · AUTOTUNE (autotune live, écho et réverb calés
+  sur le tempo, anti-larsen) devient le Pack Voix : 49,90 €, une seule fois, pour toujours sur ce Mac. Sans lui, 15
+  minutes d’essai par jour, comptées seulement quand la voix est allumée ; deux minutes avant la fin un message
+  prévient, puis la voix s’éteint en fondu. Le bouton « Acheter » ouvre la page de paiement ; après le paiement, ta
+  clé s’affiche, tu la colles dans la fenêtre Pack Voix (Réglages → À propos), et c’est débloqué, sans réseau ensuite.
+  Tout le reste de Scalpel DJ reste gratuit, et le micro de ta table marche toujours sans lui.
+- **Un son chargé sur une platine qui joue part tout de suite** : Comme dans Serato : si la platine jouait (ou est
+  allée au bout de son son), le son qu’on y charge part tout de suite, plus besoin de rappuyer sur PLAY. Réglages →
+  Platines → Garder la lecture au chargement pour revenir à l’ancien comportement.
+- **Deux ordinateurs sur la même table** : Sur une REV5 ou une REV7, deux DJ peuvent brancher chacun leur Mac (prises
+  USB A et B) et passer la main voie par voie avec le sélecteur de la table, comme avec Serato : quand une voie passe
+  sur l’autre ordinateur, sa platine se tait ici et le dit sur sa forme d’onde ; quand elle revient, bouge son fader
+  pour reprendre la main. Scalpel DJ devine tout seul sur quelle prise il est ; si besoin, Réglages → Contrôleur →
+  Deux ordinateurs sur la table. Essayé sur une vraie REV5 (prise A, voie passée sur B puis revenue) ; pas encore avec
+  deux Mac branchés : dis-nous comment ça se passe.
+
+<details><summary>In English (November 28, 2026)</summary>
+
+BETA version, like 1.59. The app bundle doesn't change: if you have 1.56 or newer, macOS asks for nothing.
+
+- **Voice Pack: the mic voice is a one-time purchase**: The MIC · AUTOTUNE channel (live autotune, tempo-synced echo
+  and reverb, feedback suppression) becomes the Voice Pack: €49.90, once, forever on this Mac. Without it, 15 minutes
+  of trial per day, counted only while the voice is on; a message warns you two minutes before the end, then the voice
+  fades out. The “Buy” button opens the payment page; after paying, your key is shown, you paste it into the Voice
+  Pack window (Settings → About), and it is unlocked, with no network needed afterwards. Everything else in Scalpel DJ
+  stays free, and your mixer’s own mic always works without it.
+- **A track loaded on a playing deck starts right away**: Like in Serato: if the deck was playing (or ran to the end
+  of its track), the track you load on it starts right away, no need to press PLAY again. Settings → Decks → Keep
+  playing on load to go back to the old behaviour.
+- **Two computers on the same mixer**: On a REV5 or a REV7, two DJs can each plug in their own Mac (USB ports A and B)
+  and hand over channel by channel with the mixer’s selector, as with Serato: when a channel switches to the other
+  computer, its deck goes silent here and says so on its waveform; when it comes back, move its fader to take over
+  again. Scalpel DJ works out on its own which port it is on; if needed, Settings → Controller → Two computers on the
+  mixer. Tried on a real REV5 (port A, channel switched to B and back); not yet with two Macs plugged in: tell us how
+  it goes.
+
+</details>
 
 ## 1.59 BETA — 23 novembre 2026
 
